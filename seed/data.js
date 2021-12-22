@@ -29,6 +29,7 @@ const insertData = async () => {
       category: "Kitchen",
     },
   ];
+
   const user = new User({
     username: "LilyPott",
     email: "lpott@gmail.com",
