@@ -1,6 +1,6 @@
 import db from "../db/connection.js";
 import Product from "../models/product.js";
-import User from "../models/users";
+import User from "../models/users.js";
 import bcrypt from "bcrypt";
 
 const insertData = async () => {
