@@ -1,9 +1,10 @@
 import db from './db/connection.js'
 import postRoutes from './routes/products.js'
 
+
 import express from 'express'
 import cors from 'cors'
-import logger from 'logger'
+import logger from 'morgan'
 
 const app = express()
 const PORT = process.env.PORT || 3000
