@@ -12,7 +12,7 @@ Frntr is an online shopping web app where users can create an account and shop f
 
 ## Whimsical Heirarchy
 
-![img](https://i.imgur.com/MbNe6GI.png)
+![img](https://i.ibb.co/6t4BSd0/Home-Decor-2.png)
 
 ## Schema
 
