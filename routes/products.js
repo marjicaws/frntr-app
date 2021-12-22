@@ -7,6 +7,7 @@ router.get('/products/furniture', controllers.getFurniture)
 router.get('/products/kitchen', controllers.getKitchen)
 router.get('/products/backyard', controllers.backyard)
 router.get('/products', controllers.createProduct)
-router.get('/products/:id', contollers.updateProduct)
+router.get('/products/:id', controllers.updateProduct)
 router.get('/products/:id', controllers.deleteProduct)
+router.get('/products/:id', controllers.getProduct)
 export default router
