@@ -1,14 +1,13 @@
-import User from "../models/users";
-import bcrypt from "bcrypt"
+import User from "../models/users.js";
+import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const SALT_ROUNDS = process.env.SALT_ROUNDS || 11
-const TOKEN_KEY = process.env.TOKEN_KEY ||
-'anevenbetterreallylonggoodkey'
+const SALT_ROUNDS = process.env.SALT_ROUNDS || 11;
+const TOKEN_KEY = process.env.TOKEN_KEY || "anevenbetterreallylonggoodkey";
 
-const today = new Date()
-const exp = new Date(today)
-exp.setDate(today.getDate() + 30)
+const today = new Date();
+const exp = new Date(today);
+exp.setDate(today.getDate() + 30);
 
 export const signUp = async (req, res) => {
   try {
@@ -73,5 +72,3 @@ export const verify = async (req, res) => {
     res.status(401).send("Not Authorized");
   }
 };
-
-
