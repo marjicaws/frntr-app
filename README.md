@@ -12,14 +12,53 @@ frntr is a online shopping web app where users can create an account and shop fo
 
 ## Whimsical Heirarchy
 
-[img](https://i.imgur.com/MbNe6GI.png)
+![img](https://i.imgur.com/MbNe6GI.png)
 
 ## Schema
-```
 
+### Product
 ```
-
+{
+    {
+        title: { 
+            type: String, required: true 
+        }
+        img: { 
+            type: String, required: true 
+        }
+        price:: { 
+            type: String, required: true 
+        }
+        description: { 
+            type: String, required: true 
+        }
+    }
+    {
+        {timestamps: true}
+    }
+}
+```
+### User
+```
+{
+    {
+        username: {
+            type: String,
+            required: true,
+        },
+        email: { 
+            type: String, required: true 
+        },
+        password_digest: { 
+            type: String, required: true, select: false 
+        },
+    },
+    { timestamps: true }
+}
+```
 ## MVP
+
+[Github Project Board](https://github.com/eterral/frntr-app/projects/1)
 
 ### Front end
 - User account creation and sign in
@@ -38,4 +77,4 @@ frntr is a online shopping web app where users can create an account and shop fo
 
 ## Team Expectations
 
-[Click here](url)
+[Click here](https://docs.google.com/document/d/1cCRP53bbE9suJjdM5Thpyvb2b_W6Zo5YQERDilt-ew8/edit?usp=sharing)
