@@ -4,7 +4,7 @@
 
 ## Overview
 
-frntr is a online shopping web app where users can create an account and shop for household goods. Users will be able to browse different categories as well as selecting an idividual product and see more details. Products can be edited and deleted from the details screen. New products can be added to the store 
+Frntr is an online shopping web app where users can create an account and shop for household goods. Users will be able to browse different categories as well as selecting an individual product and see more details. Products can be edited and deleted from the details screen and new products can be added to the store. Users will be able to leave written reviews for products and recently added products will appear in a carosel on the main page.
 
 ## Figma Design
 
