@@ -39,3 +39,14 @@ export const getBackyard = async (req, res) => {
     res.status(500).json({ error: error.message })
   }
 }
+
+export const createProduct = async (req, res) => {
+  try {
+    const product = new Product(req.body)
+    await product.save()
+    res.status(201).json(product)
+  } catch (error) {
+    console.log(error.message)
+    res.status(500).json({ error: error.message })
+  }
+}
