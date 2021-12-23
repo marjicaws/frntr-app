@@ -1,37 +1,33 @@
-import { getProduct } from '../../services/products.js'
-import { useState , useEffect } from 'react'
-import Layout from "../Layout/Layout"
-import { useParams } from 'react-router-dom'
+import { getProduct } from "../../services/products.js";
+import { useState, useEffect } from "react";
+import Layout from "../../components/Layout/Layout.js";
+import { useParams } from "react-router-dom";
 
-export default function Details () {
+export default function Details() {
+  const [product, setProduct] = useState([]);
+  const [found, setFound] = useState({});
 
-    const [product, setProduct] = useState({})
-    const [found, setFound] = useState({})
+  const params = useParams();
 
-    const params = useParams()
+  useEffect(() => {
+    const grabProduct = async () => {
+      const item = await getProduct(params.id);
+      setProduct(item);
+      console.log(item);
+    };
+    grabProduct();
+  }, [params.id]);
+console.log(product)
 
-    useEffect(() => {
-        const grabProduct = async () => {
-            const item = await getProduct(id)
-            setProduct(item)
-           console.log(item)
-        }
-        grabProduct()
-    }, [id])
 
-    useEffect(() => {
-            foundProduct = product.find(thing => {
-                return thing._id === params.id
-            })
-            setFound(foundProduct)
 
-    },[params.id])
-
-    return (
-        <Layout >
-        <div>
-            <h1>Frntr</h1>
-        </div>
-        </Layout>
-    )
+  return (
+    <Layout>
+      <div>
+        <h1>{product.title}</h1>
+        <h2>{product.description}</h2>
+        <h3>{product.price}</h3>
+      </div>
+    </Layout>
+  );
 }
