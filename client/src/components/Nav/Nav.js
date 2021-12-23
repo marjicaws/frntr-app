@@ -5,9 +5,9 @@ export default function Nav () {
         <nav>
         <div>
 <Link to="/" ><img src="" alt="logo"/></Link>
-<Link to="/products/furniture">Furniture</Link>
-<Link to="/products/kitchen">Kitchen/Dining</Link>
-<Link to="/products/backyard">Backyard</Link>
+<Link to="/furniture">Furniture</Link>
+<Link to="/kitchen">Kitchen/Dining</Link>
+<Link to="/backyard">Backyard</Link>
 <Link to="/aboutus">About us</Link>
 
         </div>
