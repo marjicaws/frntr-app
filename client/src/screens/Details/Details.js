@@ -27,6 +27,15 @@ console.log(product)
         <h1>{product.title}</h1>
         <h2>{product.description}</h2>
         <h3>{product.price}</h3>
+        <p>Add to Cart</p>
+        <p>Save to Wishlist</p>
+        <img src="url.com" alt = "image"/>
+
+    
+        {/* <PostReviews /> */}
+
+
+
       </div>
     </Layout>
   );
