@@ -11,9 +11,10 @@ const ProductDetail = (props) => {
         const getProduct = async () => {
             const product = await getProduct(id)
             setProduct(product)
+            console.log(product)
             
         }
-        fetchProduct()
+        getProduct()
     })
 
     return(
