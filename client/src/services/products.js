@@ -1,75 +1,73 @@
-
-import api from './apiConfig'
+import api from "./apiConfig";
 
 export const getProducts = async () => {
   try {
-    const res = await api.get('/products')
-    return res.data
+    const res = await api.get("/products");
+    return res.data;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
 export const getFurniture = async () => {
   try {
-    const res = await api.get('/products/furniture')
-    return res.data
+    const res = await api.get("/products/furniture");
+    return res.data;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
 export const getBackyard = async () => {
   try {
-    const res = await api.get('/products/backyard')
-    return res.data
+    const res = await api.get("/products/backyard");
+    return res.data;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
 export const getKitchen = async () => {
   try {
-    const res = await api.get('/products/kitchen')
-    return res.data
+    const res = await api.get("/products/kitchen");
+    return res.data;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
-
-export const getProduct = async id => {
+export const getProduct = async (id) => {
   try {
-    const res = await api.get(`/products/${id}`)
-    return res.data
+    const res = await api.get(`/products/${id}`);
+    return res.data;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
-export const createProduct = async product => {
+export const createProduct = async (product) => {
   try {
-    const res = await api.post('/products', product)
-    return res.data
+    const res = await api.post("/products", product);
+    return res.data;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
 export const updateProduct = async (id, product) => {
   try {
-    const res = await api.put(`/products/${id}`, product)
-    return res.data
+    const res = await api.put(`/products/${id}`, product);
+    return res.data;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
-export const deleteProduct = async id => {
+export const deleteProduct = async (id) => {
   try {
-    const res = await api.delete(`/products/${id}`)
-    return res.data
+    const res = await api.delete(`/products/${id}`);
+    return res.data;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
