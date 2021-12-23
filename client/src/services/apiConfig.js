@@ -1,5 +1,4 @@
 import axios from "axios";
-import { app } from "faker/lib/locales/en";
 
 const api = axios.create({
   baseURL:
@@ -14,12 +13,15 @@ const getToken = () => {
   });
 };
 
-app.inteceptors.request.use(async function (config) {
-  config.headers(`Authorization`) = await getToken()
-  return config
-}, function (error) {
-  console.log('Request error: ', error)
-  return Promise.reject(error)
-})
+api.inteceptors.request.use(
+  async function (config) {
+    config.headers[`Authorization`] = await getToken();
+    return config;
+  },
+  function (error) {
+    console.log("Request error: ", error);
+    return Promise.reject(error);
+  }
+);
 
 export default api;
