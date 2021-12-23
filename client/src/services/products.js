@@ -1,4 +1,4 @@
-import { response } from 'express'
+
 import api from './apiConfig'
 
 export const getProducts = async () => {
