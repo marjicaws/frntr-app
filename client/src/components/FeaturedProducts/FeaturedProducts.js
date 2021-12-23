@@ -1,13 +1,37 @@
-import React from 'react'
 import './FeaturedProducts.css'
-import CardProduct from './components/PostCard.js'
+import ProductCard from './components/PostCard.js'
+import { useEffect, useState } from 'react'
+import { getKitchen, getBackyard, getFurniture } from '../../services/products'
 
 
 export default function FeaturedProducts() {
 
-  let featuredProductArr = []
+  const [featuredProductArr, setFeaturedProductArr] = useState([])
 
+  useEffect(() => {
 
+    const fetchKitchen = async () => {
+      const foundKitchen = await getKitchen()
+      setFeaturedProductArr([...featuredProductArr,
+        featuredProductArr.push
+          (foundKitchen[Math.floor(Math.random() * foundKitchen.length - 1)])])
+    }
+
+    const fetchBackyard = async () => {
+      const foundBackyard = await getBackyard()
+      setFeaturedProductArr([...featuredProductArr,
+      featuredProductArr.push(foundBackyard[Math.floor(Math.random() * foundBackyard.length - 1)])])
+    }
+
+    const fetchFurniture = async () => {
+      const foundFurniture = await getFurniture()
+      setFeaturedProductArr([...featuredProductArr,
+      featuredProductArr.push(foundFurniture[Math.floor(Math.random() * foundFurniture.length - 1)])])
+    }
+    fetchKitchen()
+    fetchBackyard()
+    fetchFurniture()
+  }, [])
 
   return (
     <div>
