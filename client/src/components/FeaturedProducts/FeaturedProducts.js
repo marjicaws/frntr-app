@@ -1,5 +1,5 @@
 import './FeaturedProducts.css'
-import ProductCard from './components/PostCard.js'
+import ProductCard from '../ProductCard/ProductCard.js'
 import { useEffect, useState } from 'react'
 import { getKitchen, getBackyard, getFurniture } from '../../services/products'
 
