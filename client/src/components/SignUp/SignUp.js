@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { signIn } from "../../services/users";
+import { signUp } from "../../services/users";
 import { useNavigate } from "react-router-dom";
 
-export default function SignIn({ setUser }) {
+export default function SignUp({ setUser }) {
   const navigate = useNavigate();
 
   const [form, setForm] =
     useState[
       {
+        username: "",
         email: "",
         password: "",
         isError: false,
@@ -22,10 +23,10 @@ export default function SignIn({ setUser }) {
     });
   };
 
-  const onSignIn = async (e) => {
+  const onSignUp = async (e) => {
     e.preventDefault();
     try {
-      const user = await signIn(form);
+      const user = await signUp(form);
       setUser(user);
       navigate("/");
     } catch (error) {
@@ -34,6 +35,7 @@ export default function SignIn({ setUser }) {
         errorMsg: "Invalid Email or Password",
         email: "",
         passsword: "",
+        username: "",
       });
     }
   };
@@ -56,6 +58,14 @@ export default function SignIn({ setUser }) {
           name="email"
           value={form.email}
           placeholder="Enter Email"
+          onChange={handleChange}
+        />
+        <input
+          required
+          type="text"
+          name="username"
+          value={form.username}
+          placeholder="Enter Username"
           onChange={handleChange}
         />
         <input
