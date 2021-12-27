@@ -1,20 +1,20 @@
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Details from "../src/screens/Details/Details.js";
 import Home from "../src/screens/Home/Home.js";
 import AboutUs from "../../client/src/screens/AboutUs/AboutUs.js";
 import Furniture from "../src/screens/Furniture/Furniture.js";
-import verifyUser from "./services/users.js";
+import { verifyUser } from "./services/users.js";
 import SignIn from "./components/SignIn/SignIn.js";
 import SignUp from "./components/SignUp/SignUp.js";
 import "./App.css";
 import Kitchen from "./screens/Kitchen/Kitchen.js";
-import Backyard from "./screens/Backyard/Backyard.js"
+import Backyard from "./screens/Backyard/Backyard.js";
 
 function App() {
   const [user, setUser] = useState(null);
 
-  userEffect(() => {
+  useEffect(() => {
     const grabUser = async () => {
       const user = await verifyUser();
       user ? setUser(user) : setUser(null);
