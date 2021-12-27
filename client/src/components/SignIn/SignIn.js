@@ -5,15 +5,12 @@ import { useNavigate } from "react-router-dom";
 export default function SignIn({ setUser }) {
   const navigate = useNavigate();
 
-  const [form, setForm] =
-    useState[
-      {
-        email: "",
-        password: "",
-        isError: false,
-        errorMsg: "",
-      }
-    ];
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+    isError: false,
+    errorMsg: "",
+  });
 
   const handleChange = (e) => {
     setForm({
@@ -33,7 +30,7 @@ export default function SignIn({ setUser }) {
         isError: true,
         errorMsg: "Invalid Email or Password",
         email: "",
-        passsword: "",
+        password: "",
       });
     }
   };
@@ -58,6 +55,7 @@ export default function SignIn({ setUser }) {
           placeholder="Enter Email"
           onChange={handleChange}
         />
+        <label>Password</label>
         <input
           required
           type="password"
