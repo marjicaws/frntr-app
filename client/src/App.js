@@ -10,6 +10,7 @@ import SignUp from "./components/SignUp/SignUp.js";
 import "./App.css";
 import Kitchen from "./screens/Kitchen/Kitchen.js";
 import Backyard from "./screens/Backyard/Backyard.js";
+import EditProduct from "./screens/EditProduct/EditProduct.js";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -33,6 +34,7 @@ function App() {
         <Route path="/signup" element={<SignUp setUser={setUser} />} />
         <Route path="/kitchen" element={<Kitchen />} />
         <Route path="/backyard" element={<Backyard />} />
+        <Route path="/product/edit/:id" element={<EditProduct/>} />
       </Routes>
     </div>
   );

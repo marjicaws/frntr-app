@@ -2,6 +2,7 @@ import { getProduct } from "../../services/products.js";
 import { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout.js";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Details() {
   const [product, setProduct] = useState([]);
@@ -28,7 +29,9 @@ export default function Details() {
         <p>Add to Cart</p>
         <p>Save to Wishlist</p>
         <img src={product.img} alt="image" />
-
+        <Link to={`/product/edit/${product._id}`} > 
+        <button>Edit Product</button>
+        </Link>
         {/* <PostReviews /> */}
       </div>
     </Layout>
