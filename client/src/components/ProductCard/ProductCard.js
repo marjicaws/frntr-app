@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import "./ProductCard.css";
 
 export default function ProductCard(props) {
-  console.log(props)
+  console.log(props);
   return (
-    
-
     <div key={props.key}>
       <Link to={`/products/${props.id}`}>
         <img src={props.img} alt={props.id} />
@@ -15,6 +13,5 @@ export default function ProductCard(props) {
       <h6>{props.price}</h6>
       <button>add to cart</button>
     </div>
-
   );
 }

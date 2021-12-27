@@ -17,9 +17,7 @@ export default function Details() {
     };
     grabProduct();
   }, [params.id]);
-console.log(product)
-
-
+  console.log(product);
 
   return (
     <Layout>
@@ -29,13 +27,9 @@ console.log(product)
         <h3>{product.price}</h3>
         <p>Add to Cart</p>
         <p>Save to Wishlist</p>
-        <img src="url.com" alt = "image"/>
+        <img src={product.img} alt="image" />
 
-    
         {/* <PostReviews /> */}
-
-
-
       </div>
     </Layout>
   );
