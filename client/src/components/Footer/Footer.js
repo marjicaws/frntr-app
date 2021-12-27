@@ -1,8 +1,22 @@
+import "./Footer.css"
+
 const Footer = () => (
   <footer>
-    <a href="https://github.com/eterral/frntr-app">
-      <img src="" alt="github" />
-    </a>
+    <h5 className="footer-text">Connect with us</h5>
+    <div className="social-links">
+      <a href="https://github.com/eterral/frntr-app">
+        <img src="https://i.imgur.com/PfMoKGt.png" alt="github" />
+      </a>
+      <a href="https://github.com/eterral/frntr-app">
+        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2016/12/instagram-logo1.png" alt="instagram" />
+      </a>
+      <a href="https://github.com/eterral/frntr-app">
+        <img src="https://www.clipartmax.com/png/full/356-3566228_image-royalty-free-library-twitter-icon-png-for-free-vector-twitter-logo.png" alt="twitter" />
+      </a>
+      <a href="https://github.com/eterral/frntr-app">
+        <img src="https://www.clipartmax.com/png/full/226-2265765_facebook-icon-facebook-logo-black-vector.png" alt="facebook" />
+      </a>
+    </div>
   </footer>
 );
 
