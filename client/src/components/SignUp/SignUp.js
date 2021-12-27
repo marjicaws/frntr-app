@@ -50,7 +50,7 @@ export default function SignUp({ setUser }) {
 
   return (
     <div>
-      <form onSubmit={onSignIn}>
+      <form onSubmit={onSignUp}>
         <label>Email</label>
         <input
           required
