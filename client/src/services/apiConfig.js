@@ -13,7 +13,7 @@ const getToken = () => {
   });
 };
 
-api.inteceptors.request.use(
+api.interceptors.request.use(
   async function (config) {
     config.headers[`Authorization`] = await getToken();
     return config;
