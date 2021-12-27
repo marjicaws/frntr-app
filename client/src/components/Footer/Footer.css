@@ -1,4 +1,7 @@
 footer  {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -6,7 +9,7 @@ footer  {
   background-color: #BCB8B1;
 }
 
-img {
+.footer-social {
   height: 20px;
   width: 20px;
   padding: 4px;
