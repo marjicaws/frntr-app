@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { getProduct, updateProduct } from '../../services/products'
+import { getProduct, updateProduct } from '../../services/products.js'
+import Delete from '../../components/Delete/Delete.js'
 
 export default function EditProduct() {
 
@@ -69,6 +70,7 @@ export default function EditProduct() {
         />  
       </form>
       <button onClick={(e) => handleSubmit(e)}>Edit</button>
+      <Delete />
     </div>
   )
 }
