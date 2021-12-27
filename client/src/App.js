@@ -11,6 +11,7 @@ import "./App.css";
 import Kitchen from "./screens/Kitchen/Kitchen.js";
 import Backyard from "./screens/Backyard/Backyard.js";
 import EditProduct from "./screens/EditProduct/EditProduct.js";
+import CreateProduct from "./screens/CreateProduct/CreateProduct.js";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -35,6 +36,7 @@ function App() {
         <Route path="/kitchen" element={<Kitchen />} />
         <Route path="/backyard" element={<Backyard />} />
         <Route path="/product/edit/:id" element={<EditProduct/>} />
+        <Route path="/new" element={<CreateProduct />} />
       </Routes>
     </div>
   );
