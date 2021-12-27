@@ -5,8 +5,9 @@ import Home from "../src/screens/Home/Home.js";
 import AboutUs from "../../client/src/screens/AboutUs/AboutUs.js";
 import Furniture from "../src/screens/Furniture/Furniture.js";
 import verifyUser from "./services/users.js";
-
 import "./App.css";
+import Kitchen from "./screens/Kitchen/Kitchen.js";
+import Backyard from "./screens/Backyard/Backyard.js"
 
 function App() {
   const [user, setUser] = useState(null);
@@ -14,7 +15,7 @@ function App() {
   userEffect(() => {
     const grabUser = async () => {
       const user = await verifyUser();
-      usse ? setUser(user) : setUser(null);
+      user ? setUser(user) : setUser(null);
     };
     grabUser();
   }, []);
@@ -26,6 +27,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/furniture" element={<Furniture />} />
+        <Route path="/kitchen" element={<Kitchen />} />
+        <Route path="/backyard" element={<Backyard />} />
       </Routes>
     </div>
   );
