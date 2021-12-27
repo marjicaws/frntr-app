@@ -5,16 +5,13 @@ import { useNavigate } from "react-router-dom";
 export default function SignUp({ setUser }) {
   const navigate = useNavigate();
 
-  const [form, setForm] =
-    useState[
-      {
-        username: "",
-        email: "",
-        password: "",
-        isError: false,
-        errorMsg: "",
-      }
-    ];
+  const [form, setForm] = useState({
+    username: "",
+    email: "",
+    password: "",
+    isError: false,
+    errorMsg: "",
+  });
 
   const handleChange = (e) => {
     setForm({
