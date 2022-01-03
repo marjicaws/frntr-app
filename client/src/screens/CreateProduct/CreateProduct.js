@@ -1,4 +1,6 @@
 import React from 'react'
+import './CreateProduct.css'
+import Layout from "../../components/Layout/Layout";
 import {  useState } from 'react'
 import { createProduct } from '../../services/products'
 
@@ -22,9 +24,15 @@ export default function CreateProduct() {
         await createProduct(newSubmit);
       };
 
-    return (
-        <div>
-            <form onSubmit={handleSubmit} >
+  return (
+    <Layout>
+      <div className="createProduct_container">
+        <div className="createProduct_card">
+          <h1 className="createProduct_title">Submit a New Product</h1>
+          <p className="createProduct_description">Add a new product to the collection</p>
+          <form className="createProduct_form"
+            onSubmit={handleSubmit} >
+            <label>Name</label>
             <input
                   type="text"
                   value={title}
@@ -32,16 +40,17 @@ export default function CreateProduct() {
                   onChange={(e) => setTitle(e.target.value)}
                   id="title"
                   
-                />
+            />
+            <label>Price</label>
                 <input
                   type="text"
                   value={price}
                   placeholder="Price"
                   onChange={(e) => setPrice(e.target.value)}
-                 
                   id="price"
                   
-                />
+            />
+            <label>Description</label>
                 <input
                   type="text"
                   value={description}
@@ -49,7 +58,8 @@ export default function CreateProduct() {
                   onChange={(e) => setDescription(e.target.value)}
                   id="description"
                   
-                />
+            />
+            <label>Img Url</label>
                 <input 
                 type="url"
                 value={img}
@@ -57,8 +67,7 @@ export default function CreateProduct() {
                 onChange={(e) => setImg(e.target.value)} 
                 id="img"
                 />
-
-                
+              <label>Select a Category</label>
                 <select id="category" name="category" onChange={(e) => setCategory(e.target.value)}>
                     <option value="null">Select Category</option>
                     <option value="Furniture">Furniture </option>
@@ -66,8 +75,10 @@ export default function CreateProduct() {
                     <option value="Kitchen" >Kitchen </option> 
                 </select>
                 
-                <button type="submit" >Submit</button>
-            </form>
-        </div>
+                <button className="createProduct_button" type="submit" >Submit</button>
+          </form>
+          </div>
+      </div>
+      </Layout>
     )
 }
