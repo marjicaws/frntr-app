@@ -1,5 +1,6 @@
 import React from 'react'
-import SignIn from 'src/components/SignIn/SignIn.js'
+import { Link } from 'react-router-dom'
+import SignIn from '../../components/SignUp/SignUp.js'
 import SignUp from '../../components/SignUp/SignUp.js'
 
 
@@ -8,8 +9,8 @@ import SignUp from '../../components/SignUp/SignUp.js'
 function Login() {
   return (
     <div>
-      <SignIn />
-      <SignUp />
+      <Link to='signin'>Sign In</Link>
+      <Link to='signup'>Create Account</Link>
     </div>
   )
 }
