@@ -10,6 +10,7 @@ export default function Nav () {
 <Link to="/backyard">Backyard</Link>
 <Link to="/aboutus">About us</Link>
 <Link to="/signin">Sign In/Sign Out</Link>
+<Link to="/new">Submit New Product</Link>
 
         </div>
         </nav>
