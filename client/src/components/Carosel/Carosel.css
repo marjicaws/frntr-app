@@ -1,0 +1,9 @@
+.carousel-container {
+  width: 80%;
+  border: 2px solid black;
+}
+
+.more-containers {
+  display: flex;
+  justify-content: center;
+}
