@@ -5,6 +5,7 @@ import Home from "../src/screens/Home/Home.js";
 import AboutUs from "../../client/src/screens/AboutUs/AboutUs.js";
 import Furniture from "../src/screens/Furniture/Furniture.js";
 import { verifyUser } from "./services/users.js";
+import Login from '../src/screens/Login/Login.js';
 import SignIn from "./components/SignIn/SignIn.js";
 import SignUp from "./components/SignUp/SignUp.js";
 import "./App.css";
@@ -31,11 +32,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/furniture" element={<Furniture />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/signin" element={<SignIn setUser={setUser} />} />
         <Route path="/signup" element={<SignUp setUser={setUser} />} />
         <Route path="/kitchen" element={<Kitchen />} />
         <Route path="/backyard" element={<Backyard />} />
-        <Route path="/product/edit/:id" element={<EditProduct/>} />
+        <Route path="/product/edit/:id" element={<EditProduct />} />
         <Route path="/new" element={<CreateProduct />} />
       </Routes>
     </div>
