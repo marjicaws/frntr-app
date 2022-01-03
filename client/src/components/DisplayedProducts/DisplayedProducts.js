@@ -10,7 +10,6 @@ export default function DisplayedProducts({
   setSearchedProducts,
   searchedProducts,
 }) {
-  // const [searchedProducts, setSearchedProducts] = useState([props.products]);
   const [applySort, setApplySort] = useState(true);
 
   const handleSearch = (e) => {
@@ -39,8 +38,6 @@ export default function DisplayedProducts({
     }
   };
 
-  console.log(searchedProducts);
-
   const handleSubmit = (e) => e.preventDefault();
 
   return (
@@ -50,6 +47,7 @@ export default function DisplayedProducts({
       {searchedProducts.map((product) => {
         return (
           <ProductCard
+            product={product}
             id={product?._id}
             title={product?.title}
             img={product?.img}
