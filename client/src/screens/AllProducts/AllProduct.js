@@ -33,7 +33,7 @@ export default function AllProduct() {
           onChange={(e) => handleSearch(e)}
           placeholder="search"
           type="text"
-          value={value}
+          // value={value}
         />
       </form>
       {searchedProducts.map((product) => {
