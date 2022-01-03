@@ -26,8 +26,8 @@ export default function Details() {
         <h1>{product.title}</h1>
         <h2>{product.description}</h2>
         <h3>{product.price}</h3>
-        <p>Add to Cart</p>
-        <p>Save to Wishlist</p>
+        <Link to="/products/:id" >Add to Cart</Link>
+        <Link to="/products/:id">Save to Wishlist</Link>
         <img src={product.img} alt="image" />
         <Link to={`/product/edit/${product._id}`} > 
         <button>Edit Product</button>
