@@ -1,38 +1,35 @@
-import React from 'react'
-import {useState, useEffect} from 'react'
-import ProductCard from '../../components/ProductCard/ProductCard.js'
-import Layout from '../../components/Layout/Layout.js'
-import { getBackyard } from '../../services/products.js'
-
+import React from "react";
+import { useState, useEffect } from "react";
+import Layout from "../../components/Layout/Layout.js";
+import { getBackyard } from "../../services/products.js";
+import DisplayedProducts from "../../components/DisplayedProducts/DisplayedProducts.js";
 
 export default function Backyard() {
-  
-  const [backyard, setBackyard]= useState([])
+  const [backyard, setBackyard] = useState([]);
+  const [searchedProducts, setSearchedProducts] = useState([]);
 
-  useEffect(() => { 
+  useEffect(() => {
     const grabBackyard = async () => {
-      const res = await getBackyard()
-      setBackyard(res) 
-    }
-    grabBackyard()
-  }, [])
+      const res = await getBackyard();
+      setBackyard(res);
+      setSearchedProducts(res);
+    };
+    grabBackyard();
+  }, []);
 
   return (
     <Layout>
-      <div className='all-container'>
-    <div className='order-cards'>
-      {backyard.map((product) =>(
-        <ProductCard
-            id={product?._id}
-            title={product?.title}
-            img={product?.img}
-            description={product?.description}
-            price={product?.price}
-            category={product?.category}
-        />
-      ))}
-      </div>
+      <div className="all-container">
+        <div className="order-cards">
+          {backyard ? (
+            <DisplayedProducts
+              products={backyard}
+              setSearchedProducts={setSearchedProducts}
+              searchedProducts={searchedProducts}
+            />
+          ) : null}
+        </div>
       </div>
     </Layout>
-  )
+  );
 }
