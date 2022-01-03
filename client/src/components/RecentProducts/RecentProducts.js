@@ -14,6 +14,8 @@ export default function RecentProducts() {
   }, []);
   return (
     <div>
+      <div className='all-container'>
+      <div className='order-cards'>
       {recentProducts.map((product) => (
         <ProductCard
           id={product?._id}
@@ -24,6 +26,8 @@ export default function RecentProducts() {
           category={product?.category}
         />
       ))}
+        </div>
+        </div>
     </div>
   );
 }
