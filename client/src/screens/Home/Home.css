@@ -5,3 +5,16 @@
 .recent {
   border: 2px blue solid;
 }
+
+.home-container {
+  border: 2px green solid;
+}
+
+.banner-img {
+  height: 500px;
+  width: 1500px;
+}
+
+.banner {
+  margin-top: 100px;
+}
