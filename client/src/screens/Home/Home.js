@@ -1,12 +1,20 @@
 import "./Home.css";
 import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts.js";
-import RecentProducts from "../../components/RecentProducts/RecentProducts";
-import Layout from '../../components/Layout/Layout'
+import RecentProducts from "../../components/RecentProducts/RecentProducts.js";
+import Layout from '../../components/Layout/Layout.js'
+import Banner from "../../components/Banner/Banner.js";
+import Carosel from "../../components/Carosel/Carosel.js";
 
 export default function Home() {
   return (
     <Layout>
-      <div>
+      <div className="home-container">
+        <div>
+          <Carosel/>
+        </div>
+      <div className="banner">
+        <Banner />
+      </div>
         <div className="featured">
           <FeaturedProducts />
         </div>
