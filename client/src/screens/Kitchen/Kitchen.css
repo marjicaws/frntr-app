@@ -1,0 +1,14 @@
+.order-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  /* border: 2px solid red; */
+  margin-top: 175px;
+}
+
+.all-container {
+  display: flex;
+  /* border: 3px solid green; */
+  justify-content: center;
+}

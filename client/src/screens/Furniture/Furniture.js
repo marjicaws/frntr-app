@@ -19,7 +19,8 @@ export default function Furniture() {
   console.log(furniture);
   return (
     <Layout>
-      <div>
+      <div className="all-container">
+      <div className="order-cards">
         {furniture.map((product) => (
           <ProductCard
             id={product?._id}
@@ -30,6 +31,7 @@ export default function Furniture() {
             category={product?.category}
           />
         ))}
+        </div>
       </div>
     </Layout>
   );

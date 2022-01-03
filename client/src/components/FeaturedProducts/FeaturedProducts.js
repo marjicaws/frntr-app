@@ -24,6 +24,8 @@ export default function FeaturedProducts() {
 
   return (
     <div>
+      <div className='all-container'>
+      <div className='order-cards'>
       {featuredProductArr.map((product) => (
         <ProductCard
           id={product?._id}
@@ -34,6 +36,8 @@ export default function FeaturedProducts() {
           category={product?.category}
         />
       ))}
+        </div>
+        </div>
     </div>
   );
 }

@@ -19,7 +19,8 @@ export default function Backyard() {
 
   return (
     <Layout>
-    <div>
+      <div className='all-container'>
+    <div className='order-cards'>
       {backyard.map((product) =>(
         <ProductCard
             id={product?._id}
@@ -30,7 +31,7 @@ export default function Backyard() {
             category={product?.category}
         />
       ))}
-      
+      </div>
       </div>
     </Layout>
   )

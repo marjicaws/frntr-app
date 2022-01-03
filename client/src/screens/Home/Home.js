@@ -6,9 +6,13 @@ import Layout from '../../components/Layout/Layout'
 export default function Home() {
   return (
     <Layout>
-    <div>
-      <FeaturedProducts />
-      <RecentProducts />
+      <div>
+        <div className="featured">
+          <FeaturedProducts />
+        </div>
+        <div className="recent">
+          <RecentProducts />
+        </div>
     </div>
     </Layout>
   );
