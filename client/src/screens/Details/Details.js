@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout.js";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import '../Details/Details.css'
 
 export default function Details() {
   const [product, setProduct] = useState([]);
@@ -22,16 +23,26 @@ export default function Details() {
 
   return (
     <Layout>
-      <div>
+      <div className="whole-detail">
+        <div className="product-detail">
         <h1>{product.title}</h1>
-        <h2>{product.description}</h2>
+        <h5>{product.description}</h5>
         <h3>{product.price}</h3>
-        <Link to="/products/:id" >Add to Cart</Link>
-        <Link to="/products/:id">Save to Wishlist</Link>
-        <img src={product.img} alt="image" />
+        </div>
+       
+        <div className="dead-links">
+        <Link className="dead-link1" to="/products/:id" >Add to Cart</Link>
+        <Link className="dead-link2" to="/products/:id">Save to Wishlist</Link>
+        </div>
+        
+        <div className= "product-image">
+        <img className="individual-image"src={product.img} alt="image"   />
+        </div>
+        <div className="edit-btn">
         <Link to={`/product/edit/${product._id}`} > 
-        <button>Edit Product</button>
+        <button className="edit-product">Edit Product</button>
         </Link>
+        </div>
         {/* <PostReviews /> */}
       </div>
     </Layout>
