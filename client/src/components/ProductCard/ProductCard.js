@@ -5,13 +5,19 @@ import "./ProductCard.css";
 export default function ProductCard(props) {
   console.log(props);
   return (
-    <div key={props.key}>
+    <div className="card-container" key={props.key}>
       <Link to={`/products/${props.id}`}>
-        <img src={props.img} alt={props.id} />
+        <div className="img-container">
+          <img className="card-img" src={props.img} alt={props.id} />
+        </div>
       </Link>
-      <h4>{props.title}</h4>
-      <h6>{props.price}</h6>
-      <button>add to cart</button>
+      <div className="title-container">
+        <h4 className="card-title">{props.title}</h4>
+      </div>
+      <div className="group">
+        <button className="add-cart">Add to cart</button>
+        <h6>{props.price}</h6>
+      </div>
     </div>
   );
 }
