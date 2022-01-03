@@ -44,8 +44,11 @@ export default function DisplayedProducts({
     <div>
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+      <div className="all-container">
+        <div className="order-cards">
       {searchedProducts.map((product) => {
         return (
+        
           <ProductCard
             product={product}
             id={product?._id}
@@ -57,6 +60,8 @@ export default function DisplayedProducts({
           />
         );
       })}
+        </div>
+        </div>
     </div>
   );
 }
