@@ -1,9 +1,9 @@
-.signin_container {
+.signup_container {
   display: flex;
   justify-content: center;
 }
 
-.signin_card {
+.signup_card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,43 +15,44 @@
   padding: 40px;
 }
 
-.signin_title {
+.signup_title {
   display: flex;
   justify-content: flex-start;
   font-size: 50px;
   color: #F4F3EE;
+  padding: 2px;
   margin-top: 2px;
   margin-bottom: 5px;
-  padding: 2px;
   border-bottom: 1px solid black
 }
 
-.signin_description {
+.signup_description {
   color: #F4F3EE;
 }
 
 label{
-  text-align: left;
   color: #F4F3EE;
+  text-align: left;
 }
 
-.signin_form {
+.signup_form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.signin_input  {
+.signup_input  {
   width: 30vw;
   padding: 5px;
   border: 1px solid black;
 }
 
-.signin_button {
+.signup_button {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  text-align: center;
   background-color: #E0AFA0;
   width: 10vw;
   padding: 5px;
