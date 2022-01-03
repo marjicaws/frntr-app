@@ -24,20 +24,18 @@ export default function FeaturedProducts() {
 
   return (
     <div>
-      <div className='all-container'>
-      <div className='order-cards'>
-      {featuredProductArr.map((product) => (
-        <ProductCard
-          id={product?._id}
-          title={product?.title}
-          img={product?.img}
-          description={product?.description}
-          price={product?.price}
-          category={product?.category}
-        />
-      ))}
-        </div>
-        </div>
+      <div className="featured-cards">
+        {featuredProductArr.map((product) => (
+          <ProductCard
+            id={product?._id}
+            title={product?.title}
+            img={product?.img}
+            description={product?.description}
+            price={product?.price}
+            category={product?.category}
+          />
+        ))}
+      </div>
     </div>
   );
 }
