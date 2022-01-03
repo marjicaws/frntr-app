@@ -1,17 +1,19 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import ProductCard from "../../components/ProductCard/ProductCard";
+import DisplayedProducts from "../../components/DisplayedProducts/DisplayedProducts";
 import Layout from "../../components/Layout/Layout";
 
 import { getFurniture } from "../../services/products.js";
 
 export default function Furniture() {
   const [furniture, setFurniture] = useState([]);
+  const [searchedProducts, setSearchedProducts] = useState([]);
 
   useEffect(() => {
     const grabFurniture = async () => {
       const res = await getFurniture();
       setFurniture(res);
+      setSearchedProducts(res);
     };
     grabFurniture();
   }, []);
@@ -20,17 +22,14 @@ export default function Furniture() {
   return (
     <Layout>
       <div className="all-container">
-      <div className="order-cards">
-        {furniture.map((product) => (
-          <ProductCard
-            id={product?._id}
-            title={product?.title}
-            img={product?.img}
-            description={product?.description}
-            price={product?.price}
-            category={product?.category}
-          />
-        ))}
+        <div className="order-cards">
+          {furniture ? (
+            <DisplayedProducts
+              products={furniture}
+              setSearchedProducts={setSearchedProducts}
+              searchedProducts={searchedProducts}
+            />
+          ) : null}
         </div>
       </div>
     </Layout>

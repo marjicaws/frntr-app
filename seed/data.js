@@ -32,21 +32,24 @@ const insertData = async () => {
       title: "Premium Red Sofa",
       img: "https://i.imgur.com/ztMBvFa.png",
       price: "$250",
-      description: "Relax after a stressful day of coding on this premium chair made for programmers!",
+      description:
+        "Relax after a stressful day of coding on this premium chair made for programmers!",
       category: "Furniture",
     },
     {
       title: "Futuristic Premium Living Room Set",
       img: "https://i.imgur.com/fcQIHij.png",
       price: "$1200",
-      description: "Had a hard day coding? Relax on this futuristic premium living room set and forget you even had homework assigned!",
+      description:
+        "Had a hard day coding? Relax on this futuristic premium living room set and forget you even had homework assigned!",
       category: "Furniture",
     },
     {
       title: "Bright Yellow Solo Sofa",
       img: "https://i.imgur.com/1HaEOUU.png",
       price: "$220",
-      description: "Need to think of what the next step is for your project? Think better by relaxing on this sofa!",
+      description:
+        "Need to think of what the next step is for your project? Think better by relaxing on this sofa!",
       category: "Furniture",
     },
     {
@@ -60,14 +63,16 @@ const insertData = async () => {
       title: "Royalty-Like Sofa",
       img: "https://i.imgur.com/WLx8Tcx.png",
       price: "$2000",
-      description: "Are you the king of coding? This chair is definitely for you!",
+      description:
+        "Are you the king of coding? This chair is definitely for you!",
       category: "Furniture",
     },
     {
       title: "Green-Yellow Premium Double Sofa",
       img: "https://i.imgur.com/fbI6p1A.png",
       price: "$275",
-      description: "This premium double sofa brings your living room to life and adds personality to your boring lifestyle!",
+      description:
+        "This premium double sofa brings your living room to life and adds personality to your boring lifestyle!",
       category: "Furniture",
     },
     {
@@ -95,14 +100,16 @@ const insertData = async () => {
       title: "Cast Iron Stove",
       img: "https://i.imgur.com/VIy5sPb.png",
       price: "$3500",
-      description: "Have you ever seen a cast iron stove? Now you can if you buy this!",
+      description:
+        "Have you ever seen a cast iron stove? Now you can if you buy this!",
       category: "Kitchen",
     },
     {
       title: "Red Premium Fridge",
       img: "https://i.imgur.com/OXeZQEH.png",
       price: "$1351",
-      description: "Awesome Red Fridge to keep all your energy drinks for when you stay up all night working on your project!",
+      description:
+        "Awesome Red Fridge to keep all your energy drinks for when you stay up all night working on your project!",
       category: "Kitchen",
     },
     {
@@ -123,14 +130,16 @@ const insertData = async () => {
       title: "Super Amazing Deluxe Premium Coffe Maker",
       img: "https://i.imgur.com/f9YKU8Q.png",
       price: "$521",
-      description: "We all need coffee in the morning before starting to code, and this right here makes the best!",
+      description:
+        "We all need coffee in the morning before starting to code, and this right here makes the best!",
       category: "Kitchen",
     },
     {
       title: "Amazing Kitchen Tool Set",
       img: "https://i.imgur.com/07wvTLD.png",
       price: "$198",
-      description: "Hang all your tools here and you can put just about anything tbh",
+      description:
+        "Hang all your tools here and you can put just about anything tbh",
       category: "Kitchen",
     },
     {
@@ -151,7 +160,8 @@ const insertData = async () => {
       title: "Super Deluxe Smoker",
       img: "https://i.imgur.com/RpB6mxl.png",
       price: "$666",
-      description: "You cannot beat this machine when it comes to smoking meats!",
+      description:
+        "You cannot beat this machine when it comes to smoking meats!",
       category: "Backyard",
     },
     {
@@ -181,12 +191,13 @@ const insertData = async () => {
       price: "$649",
       description: "Really nice looking patio set! You should get it!",
       category: "Backyard",
-    }
+    },
   ];
 
   const user = new User({
     username: "LilyPott",
     email: "lpott@gmail.com",
+    role: "user",
     password_digest: await bcrypt.hash("butterfly", 11),
   });
   await user.save();
@@ -194,6 +205,7 @@ const insertData = async () => {
   const user2 = new User({
     username: "ApplePott",
     email: "apott@yahoo.com",
+    role: "user",
     password_digest: await bcrypt.hash("swanSong", 11),
   });
 
@@ -201,6 +213,7 @@ const insertData = async () => {
   const user3 = new User({
     username: "RosePott",
     email: "rpott@gmail.com",
+    role: "admin",
     password_digest: await bcrypt.hash("butterfly", 11),
   });
 
