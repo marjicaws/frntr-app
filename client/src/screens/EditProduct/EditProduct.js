@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import { getProduct, updateProduct } from '../../services/products.js'
 import Delete from '../../components/Delete/Delete.js'
 import '../EditProduct/EditProduct.css'
+import Layout from '../../components/Layout/Layout.js'
+
 
 export default function EditProduct() {
 
@@ -32,7 +34,9 @@ export default function EditProduct() {
   }
 
   return (
+    <Layout>
     <div>
+      
       <form className="edit-products">
         <h1>Edit Product</h1>
         <h5>Fill in the form below to make changes to a product.</h5>
@@ -72,12 +76,17 @@ export default function EditProduct() {
           onChange={(e) => handleChange(e)}
         />  
       
-      <button onClick={(e) => handleSubmit(e)}>Edit</button>
       
       
+      <div className='multiple-btn'>
       <Delete />
-      
+      <button className='edit-product-btn' onClick={(e) => handleSubmit(e)}>Edit</button>
+      </div>
       </form>
+    <div >
+     <img className='edit-product-img' src="https://is4.revolveassets.com/images/up/2021/December/120921_f_sale_banner.jpg" alt="banner"/>
+     </div>
     </div>
+    </Layout>
   )
 }
