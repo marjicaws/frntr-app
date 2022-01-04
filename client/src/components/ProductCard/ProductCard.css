@@ -56,6 +56,11 @@
   transform: scale(1.1);
 }
 
+.add-cart:active {
+  background: black;
+  color: white;
+}
+
 .group {
   display: flex;
   width: 325px;
