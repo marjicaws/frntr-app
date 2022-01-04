@@ -17,18 +17,10 @@ export default function Home() {
         <Banner />
       </div>
         <div className="featured">
-        <div className="all-container">
-        <div className="order-cards">
               <FeaturedProducts />
-            </div>
-            </div>
         </div>
             <div className="recent">
-            <div className="all-container">
-        <div className="order-cards">
               <RecentProducts />
-            </div>
-            </div>
         </div>
     </div>
     </Layout>
