@@ -15,7 +15,7 @@ export default function ShoppingCart() {
       setCart(newCart);
       let total = 0;
       newCart.map((product) => {
-        total += parseInt(product.price.slice(1));
+      return total += parseInt(product.price.slice(1));
       });
       setCartTotal(total);
       setCartItems(newCart.length);
