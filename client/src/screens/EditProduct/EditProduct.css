@@ -2,7 +2,8 @@
     display: grid;
     
     background-color: #8A817C ;
-    
+    margin: 20px 100px 0 100px;
+    padding-bottom: 50px;
 }
 
 .title-input {
@@ -27,12 +28,24 @@
     margin: 50px 100px 20px 100px;
 }
 
-
-button {
-   
-   
+.multiple-btn {
     display: flex;
-    flex-direction: row-reverse;
+    
+
 }
+
+.edit-product-btn {
+  margin-left: 80px;
+    
+}
+
+.edit-product-img {
+    width:  80%;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+
 
 
