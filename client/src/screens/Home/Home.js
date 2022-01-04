@@ -4,6 +4,7 @@ import RecentProducts from "../../components/RecentProducts/RecentProducts.js";
 import Layout from '../../components/Layout/Layout.js'
 import Banner from "../../components/Banner/Banner.js";
 import Carosel from "../../components/Carosel/Carosel.js";
+import ShoppingCart from "../ShoppingCart/ShoppingCart";
 
 export default function Home() {
   return (
@@ -16,10 +17,18 @@ export default function Home() {
         <Banner />
       </div>
         <div className="featured">
-          <FeaturedProducts />
+        <div className="all-container">
+        <div className="order-cards">
+              <FeaturedProducts />
+            </div>
+            </div>
         </div>
-        <div className="recent">
-          <RecentProducts />
+            <div className="recent">
+            <div className="all-container">
+        <div className="order-cards">
+              <RecentProducts />
+            </div>
+            </div>
         </div>
     </div>
     </Layout>
