@@ -7,7 +7,7 @@ export default function Nav() {
       <div className="nav-container">
         <div className="home-link">
           <Link to="/">
-            <img src="" alt="logo" />
+            <img src="https://res.cloudinary.com/marssantos/image/upload/v1641312116/Frntr_Logo_i4y18a.png" />
           </Link>
         </div>
         <div className="links">
