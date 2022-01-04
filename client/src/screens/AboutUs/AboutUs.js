@@ -16,10 +16,10 @@ export default function About() {
             </h4>
             </div>
             <div className="github">
-            <div className="profile"><p>Marjica Watson-Santos</p><a><img src="https://i.imgur.com/PfMoKGt.png"/></a><a><img src="https://i.imgur.com/COYA784.png"/></a></div>
-            <div className="profile"><p>Michael Tan</p><a><img src="https://i.imgur.com/PfMoKGt.png"/></a><a><img src="https://i.imgur.com/COYA784.png"/></a></div>
-            <div className="profile"><p>Elliott Terral</p><a><img src="https://i.imgur.com/PfMoKGt.png"/></a><a><img src="https://i.imgur.com/COYA784.png"/></a></div>
-            <div className="profile"><p>Jerry Gonzalez</p><a><img src="https://i.imgur.com/PfMoKGt.png"/></a><a><img src="https://i.imgur.com/COYA784.png"/></a></div>
+            <div className="profile"><p>Marjica Watson-Santos</p><a target="_blank" rel="noopener noreferrer" href='https://github.com/marjicaws'><img src="https://i.imgur.com/PfMoKGt.png"/></a><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/marjica-watson-santos-561aa7a9/'><img src="https://i.imgur.com/COYA784.png"/></a></div>
+            <div className="profile"><p>Michael Tan</p><a target="_blank" rel="noopener noreferrer" href='https://github.com/michaelbtan'><img src="https://i.imgur.com/PfMoKGt.png"/></a><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/michael-tan-b12293ba/'><img src="https://i.imgur.com/COYA784.png"/></a></div>
+            <div className="profile"><p>Elliott Terral</p><a target="_blank" rel="noopener noreferrer" href="https://github.com/eterral"><img src="https://i.imgur.com/PfMoKGt.png"/></a><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/elliott-terral-606888106/'><img src="https://i.imgur.com/COYA784.png"/></a></div>
+            <div className="profile"><p>Jerry Gonzalez</p><a target="_blank" rel="noopener noreferrer" href='https://github.com/TekJerry'><img src="https://i.imgur.com/PfMoKGt.png"/></a><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/jerrygonz'><img src="https://i.imgur.com/COYA784.png"/></a></div>
             </div>
           
         
