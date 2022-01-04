@@ -20,7 +20,7 @@ export default function Backyard() {
 
   return (
     <Layout>
-      <h1>Backyard Products</h1>
+      <h1 className="backyard_title">Backyard</h1>
       <div className="all-backyard-container">
         <div className="order-backyard-cards">
           {backyard ? (

@@ -1,0 +1,9 @@
+.all-cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 5px solid #000000; */
+    text-align: center;
+    padding-left: 2vw
+  }

@@ -19,6 +19,7 @@ export default function Kitchen() {
 
   return (
     <Layout>
+    <h1 className="kitchen_title">Kitchen/Dining</h1>
       <div className="all-kitchen-container">
         <div className="order-kitchen-cards">
           {kitchen ? (

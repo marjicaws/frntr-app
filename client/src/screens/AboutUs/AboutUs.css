@@ -5,17 +5,18 @@
 
 .about-container {
   background: #463f3a;
-  width: 450px;
-  height: 350px;
+  height: 25vw;
   border-radius: 50%;
   margin-top: -100px;
   margin-left: -50px;
+  min-width: 25vw;
+  max-width: 25vw;
 }
 
 .title-about {
-  position: absolute;
-  top: 240px;
-  left: 245px;
+  position: relative;
+  margin: auto;
+  top: 20vh;
   color: white;
   font-weight: bold;
   font-size: 50px;
@@ -26,8 +27,10 @@
   flex-flow: column wrap;
   border: 3px #463f3a solid;
   margin-top: 100px;
-  width: 85%;
-  margin-left: 200px;
+  min-width: 85vw;
+  max-width: 85vw;
+  width: 85vw;
+  margin-left: 10vw;
   border-radius: 50px;
 }
 
@@ -40,7 +43,7 @@
 .about-text {
   display: flex;
   font-size: 40px;
-  margin-left: 150px;
+  margin-left: 10vw;
   margin-top: 80px;
 }
 

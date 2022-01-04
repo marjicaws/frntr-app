@@ -40,7 +40,7 @@ function App() {
         <Route path="/product/edit/:id" element={<EditProduct />} />
         <Route path="/new" element={<CreateProduct />} />
         <Route path="/products" element={<AllProduct />} />
-        <Route path="/cart" element = {<ShoppingCart />} />
+        <Route path="/cart" element={<ShoppingCart />} />
       </Routes>
     </div>
   );
