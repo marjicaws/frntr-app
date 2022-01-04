@@ -13,6 +13,8 @@ export default function RecentProducts() {
     findRecentProducts();
   }, []);
   return (
+    <div>
+      <h2 className="recentProducts-title">Newly Added Products</h2>
     <div className="recent-cards">
       {recentProducts.map((product) => (
         <ProductCard
@@ -24,6 +26,7 @@ export default function RecentProducts() {
           category={product?.category}
         />
       ))}
-    </div>
+      </div>
+      </div>
   );
 }
