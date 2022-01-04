@@ -35,7 +35,6 @@ a {
 .links {
   /* border: 2px solid blue; */
   display: flex;
-  margin-left: -970px;
 }
 
 .login-container {
