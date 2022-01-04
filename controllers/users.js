@@ -17,6 +17,7 @@ export const signUp = async (req, res) => {
       username,
       email,
       password_digest,
+      role: "user",
     });
     await user.save();
 
@@ -24,6 +25,7 @@ export const signUp = async (req, res) => {
       id: user._id,
       username: user.username,
       email: user.email,
+      role: user.role,
       exp: parseInt(exp.getTime() / 1000),
     };
 
@@ -38,7 +40,7 @@ export const signUp = async (req, res) => {
 export const signIn = async (req, res) => {
   try {
     const { email, password } = req.body;
-    const user = await User.fineOne({ email: email }).select(
+    const user = await User.findOne({ email: email }).select(
       "username email password_digest"
     );
     if (await bcrypt.compare(password, user.password_digest)) {
@@ -46,6 +48,7 @@ export const signIn = async (req, res) => {
         id: user._id,
         username: user.username,
         email: user.email,
+        role: user.role,
         exp: parseInt(exp.getTime() / 1000),
       };
 

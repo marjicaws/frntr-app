@@ -1,0 +1,37 @@
+.createProduct_container  {
+  display: flex;
+  justify-content: center;
+}
+
+.createProduct_card {
+  display: flex;
+  flex-direction: column;
+  background-color: #8A817C;
+  border: 1px solid black;
+  width: 40vw;
+  padding: 40px;
+}
+
+.createProduct_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.createProduct_title  {
+  display: flex;
+  margin: 0 auto;
+  color: #F4F3EE;
+  border-bottom: 1px solid black;
+}
+
+.createProduct_description {
+  color: #F4F3EE
+}
+
+.createProduct_button {
+  background-color: #E0AFA0;
+  margin: 20px auto 0px;
+  width: 10vw;
+}

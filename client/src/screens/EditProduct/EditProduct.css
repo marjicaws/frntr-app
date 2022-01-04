@@ -1,0 +1,51 @@
+.edit-products {
+    display: grid;
+    
+    background-color: #8A817C ;
+    margin: 20px 100px 0 100px;
+    padding-bottom: 50px;
+}
+
+.title-input {
+    margin: 50px 100px 0px 100px;
+    
+}
+
+.price-input {
+    margin: 50px 100px 0px 100px;
+}
+
+.description-input {
+    margin: 50px 100px 0px 100px;
+}
+
+
+.img-input {
+    margin: 50px 100px 0px 100px;
+}
+
+.category-input{
+    margin: 50px 100px 20px 100px;
+}
+
+.multiple-btn {
+    display: flex;
+    
+
+}
+
+.edit-product-btn {
+  margin-left: 80px;
+    
+}
+
+.edit-product-img {
+    width:  80%;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+
+
+

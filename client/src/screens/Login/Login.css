@@ -1,0 +1,30 @@
+.sign-In-Out-Toggle  {
+  display: flex;
+  justify-content: center;
+}
+
+
+.signin_toggle, .signup_toggle  {
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  background-color: #8A817C;
+  width: 20vw;
+  height: 10vh;
+  border-top: 1px solid black;
+}
+
+.signin_toggle  {
+  border-left: 1px solid black;
+  border-right: 1px solid black;  
+  border-bottom: 1px solid black;
+}
+
+.signup_toggle  {
+  border-left: 1px solid black;
+  border-right: 1px solid black;  
+  border-bottom: 1px solid black;
+}
