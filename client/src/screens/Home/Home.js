@@ -19,7 +19,7 @@ export default function Home() {
         <div className="featured">
               <FeaturedProducts />
         </div>
-            <div className="recent">
+        <div className="recent">
               <RecentProducts />
         </div>
     </div>

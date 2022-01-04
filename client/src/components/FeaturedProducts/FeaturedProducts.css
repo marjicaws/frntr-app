@@ -4,3 +4,9 @@
   justify-content: space-between;
   width: 100vw;
 }
+
+.featuredProducts-title {
+  margin: 50px auto;
+  font-weight: bold;
+  text-decoration: underline;
+}
