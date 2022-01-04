@@ -7,7 +7,7 @@ export default function About() {
       <div className='big-container-about'>
         <div className='join-about'>
         <div className="about-container">
-          <h1>About Us</h1>
+          <h1 className='title-about'>About Us</h1>
           </div>
             {" "}
             <h4 className='about-text'>
