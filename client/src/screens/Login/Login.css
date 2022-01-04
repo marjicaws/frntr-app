@@ -1,3 +1,9 @@
+.sign-In-Out-Toggle  {
+  display: flex;
+  justify-content: center;
+}
+
+
 .signin_toggle, .signup_toggle  {
 	color: inherit;
 	border: none;

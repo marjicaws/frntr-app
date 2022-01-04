@@ -18,12 +18,14 @@ function Login({ setUser }) {
   return (
     <Layout>
       <div>
+      <div className="sign-In-Out-Toggle">
         <button className="signin_toggle" onClick={handleSignIn}>
           Sign In
         </button>
         <button className="signup_toggle" onClick={handleCreate}>
           Create Account
         </button>
+        </div>
         {login ? <SignIn setUser={setUser} /> : <SignUp setUser={setUser} />}
       </div>
     </Layout>
