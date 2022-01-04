@@ -6,7 +6,7 @@
   font-size: 25px;
   align-items: center;
 }
-p {
+.nav-links {
   color: #463f3a;
   margin-left: 20px;
   margin-right: 20px;
@@ -18,10 +18,10 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-p:hover {
+.nav-links:hover {
   transform: scale(1.1);
   background: #e0afa0;
   border-radius: 35px;
@@ -39,5 +39,18 @@ p:hover {
 }
 
 .login-container {
-  /* border: 2px solid red; */
+  display: flex;
+  margin-right: 10px;
+}
+
+.cart {
+  width: 50px;
+  text-decoration: none;
+}
+
+.cart:hover {
+  transform: scale(1.1);
+  background: #e0afa0;
+  border-radius: 20px;
+  padding: 5px;
 }
