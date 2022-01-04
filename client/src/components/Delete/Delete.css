@@ -1,0 +1,11 @@
+button {
+    width: 100px;
+    display: inline;
+
+}
+
+.delete-btn {
+    display: flex;
+   align-items: center;
+   margin-left: 300px;
+}

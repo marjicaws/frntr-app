@@ -1,0 +1,38 @@
+.edit-products {
+    display: grid;
+    
+    background-color: #8A817C ;
+    
+}
+
+.title-input {
+    margin: 50px 100px 0px 100px;
+    
+}
+
+.price-input {
+    margin: 50px 100px 0px 100px;
+}
+
+.description-input {
+    margin: 50px 100px 0px 100px;
+}
+
+
+.img-input {
+    margin: 50px 100px 0px 100px;
+}
+
+.category-input{
+    margin: 50px 100px 20px 100px;
+}
+
+
+button {
+   
+   
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+

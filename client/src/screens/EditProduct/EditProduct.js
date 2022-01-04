@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { getProduct, updateProduct } from '../../services/products.js'
 import Delete from '../../components/Delete/Delete.js'
+import '../EditProduct/EditProduct.css'
 
 export default function EditProduct() {
 
@@ -33,6 +34,8 @@ export default function EditProduct() {
   return (
     <div>
       <form className="edit-products">
+        <h1>Edit Product</h1>
+        <h5>Fill in the form below to make changes to a product.</h5>
         <input
           className="title-input"
           placeholder="Update Product Name"
@@ -68,9 +71,13 @@ export default function EditProduct() {
           name="category"
           onChange={(e) => handleChange(e)}
         />  
-      </form>
+      
       <button onClick={(e) => handleSubmit(e)}>Edit</button>
+      
+      
       <Delete />
+      
+      </form>
     </div>
   )
 }
