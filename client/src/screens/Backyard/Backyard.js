@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout.js";
 import { getBackyard } from "../../services/products.js";
 import DisplayedProducts from "../../components/DisplayedProducts/DisplayedProducts.js";
+import './Backyard.css'
 
 export default function Backyard() {
   const [backyard, setBackyard] = useState([]);
@@ -19,8 +20,9 @@ export default function Backyard() {
 
   return (
     <Layout>
-      <div className="all-container">
-        <div className="order-cards">
+      <h1>Backyard Products</h1>
+      <div className="all-backyard-container">
+        <div className="order-backyard-cards">
           {backyard ? (
             <DisplayedProducts
               products={backyard}

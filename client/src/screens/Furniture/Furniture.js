@@ -21,8 +21,8 @@ export default function Furniture() {
   console.log(furniture);
   return (
     <Layout>
-      <div className="all-container">
-        <div className="order-cards">
+      <div className="all-furniture-container">
+        <div className="order-furniture-cards">
           {furniture ? (
             <DisplayedProducts
               products={furniture}

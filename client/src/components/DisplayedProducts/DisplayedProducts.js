@@ -1,7 +1,7 @@
 import Sort from "../Sort/Sort";
 import Search from "../Search/Search";
 import ProductCard from "../ProductCard/ProductCard";
-
+import './DisplayedProduct.css'
 import { useState } from "react";
 import { sortAZ, sortZA, priceLH, priceHL } from "../../utils/sort";
 
@@ -45,7 +45,6 @@ export default function DisplayedProducts({
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="all-container">
-        <div className="order-cards">
       {searchedProducts.map((product) => {
         return (
         
@@ -60,7 +59,6 @@ export default function DisplayedProducts({
           />
         );
       })}
-        </div>
         </div>
     </div>
   );
