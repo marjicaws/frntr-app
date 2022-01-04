@@ -42,8 +42,10 @@ export default function DisplayedProducts({
 
   return (
     <div>
+      <div className="sort_search_container">
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+      </div>
       <div className="all-container">
       {searchedProducts.map((product) => {
         return (

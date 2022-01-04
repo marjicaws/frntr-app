@@ -7,3 +7,9 @@
   text-align: center;
   padding-left: 2vw
 }
+
+.sort_search_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5vw;
+}
