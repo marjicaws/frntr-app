@@ -1,35 +1,33 @@
-import React, { useState } from 'react'
-import './Login.css'
+import React, { useState } from "react";
+import "./Login.css";
 import Layout from "../../components/Layout/Layout";
-import SignIn from '../../components/SignIn/SignIn.js'
-import SignUp from '../../components/SignUp/SignUp.js'
+import SignIn from "../../components/SignIn/SignIn.js";
+import SignUp from "../../components/SignUp/SignUp.js";
 
-
-function Login() {
-
-  const [login, setLogin] = useState(true)
+function Login({ setUser }) {
+  const [login, setLogin] = useState(true);
 
   const handleSignIn = () => {
-    setLogin(true)
-  }
+    setLogin(true);
+  };
 
   const handleCreate = () => {
-    setLogin(false)
-  }
+    setLogin(false);
+  };
 
   return (
     <Layout>
-    <div>
-        <button className="signin_toggle"
-          onClick={handleSignIn}>Sign In</button>
-        <button className="signup_toggle"
-          onClick={handleCreate}>Create Account</button>
-        {
-          login ? <SignIn /> : <SignUp />
-        }
-    </div>
+      <div>
+        <button className="signin_toggle" onClick={handleSignIn}>
+          Sign In
+        </button>
+        <button className="signup_toggle" onClick={handleCreate}>
+          Create Account
+        </button>
+        {login ? <SignIn setUser={setUser} /> : <SignUp setUser={setUser} />}
+      </div>
     </Layout>
-  )
+  );
 }
 
-export default Login
+export default Login;
