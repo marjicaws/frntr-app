@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import CartCard from "../../components/CartCard/CartCard";
+import "./ShoppingCart.css";
 
 export default function ShoppingCart() {
   const [cart, setCart] = useState([]);
@@ -40,17 +41,20 @@ export default function ShoppingCart() {
 
   return (
     <Layout>
-      <div>
-        {cart.map((product, index) => (
-          <CartCard
-            product={product}
-            handleDeleteProduct={handleDeleteProduct}
-            index={index}
-          />
-        ))}
-        <h2>{cartItems}</h2>
-        <h3>{cartTotal}</h3>
-        <button onClick={(e) => handleDeleteCart(e)}>Delete Cart</button>
+      <div classsName="all-cart-container">
+        <>
+          {cart.map((product, index) => (
+            <CartCard
+              product={product}
+              handleDeleteProduct={handleDeleteProduct}
+              index={index}
+            />
+          ))}
+          <h2>Total amount: ${cartTotal}</h2>
+          <h3>Number of Items: {cartItems}</h3>
+          <button onClick={(e) => handleDeleteCart(e)}>Delete Cart</button>
+          <p>bottom</p>
+        </>
       </div>
     </Layout>
   );
