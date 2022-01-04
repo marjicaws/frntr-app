@@ -8,7 +8,7 @@ const Footer = () => (
         <img className="footer-social" src="https://i.imgur.com/PfMoKGt.png" alt="github" />
       </a>
       <a href="https://github.com/eterral/frntr-app">
-        <img className="footer-social" src="https://cdn.freelogovectors.net/wp-content/uploads/2016/12/instagram-logo1.png" alt="instagram" />
+        <img className="footer-social" src="https://www.clipartmax.com/png/full/20-202056_instagram-instagram-business-card-icon.png" alt="instagram" />
       </a>
       <a href="https://github.com/eterral/frntr-app">
         <img className="footer-social" src="https://www.clipartmax.com/png/full/356-3566228_image-royalty-free-library-twitter-icon-png-for-free-vector-twitter-logo.png" alt="twitter" />
