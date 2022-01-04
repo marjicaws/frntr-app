@@ -5,6 +5,7 @@ import "./ProductCard.css";
 
 export default function ProductCard(props) {
   return (
+    <div className="main-card-container">
     <div className="card-container" key={props.key}>
       <Link to={`/products/${props.id}`}>
         <div className="img-container">
@@ -22,6 +23,7 @@ export default function ProductCard(props) {
           Add to cart
         </button>
         <h6>{props.price}</h6>
+      </div>
       </div>
     </div>
   );
