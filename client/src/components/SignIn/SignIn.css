@@ -17,11 +17,12 @@
 
 .signin_title {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   font-size: 50px;
   color: #F4F3EE;
   margin-top: 2px;
   margin-bottom: 5px;
+  margin: 2px auto 5px auto;
   padding: 2px;
   border-bottom: 1px solid black
 }
@@ -30,7 +31,7 @@
   color: #F4F3EE;
 }
 
-label{
+label {
   text-align: left;
   color: #F4F3EE;
 }
@@ -40,6 +41,7 @@ label{
   flex-direction: column;
   justify-content: flex-start;
 }
+
 
 .signin_input  {
   width: 30vw;

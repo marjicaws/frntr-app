@@ -19,8 +19,8 @@ export default function Kitchen() {
 
   return (
     <Layout>
-      <div className="all-container">
-        <div className="order-cards">
+      <div className="all-kitchen-container">
+        <div className="order-kitchen-cards">
           {kitchen ? (
             <DisplayedProducts
               products={kitchen}

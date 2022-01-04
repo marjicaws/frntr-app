@@ -50,24 +50,24 @@ export default function SignIn({ setUser }) {
         <h1 className="signin_title">Account</h1>
         <p className='signin_description'>Sign in to check order status, update billing information, or review past orders.</p>
         <form className='signin_form' onSubmit={onSignIn}>
-            <label>Email</label><br />
-            <input className='signin_input'
-              required
-              type="text"
-              name="email"
-              value={form.email}
-              placeholder="Enter Email"
-              onChange={handleChange}
-            /><br />
-            <label>Password</label><br />
-            <input className='signin_input'
-              required
-              type="password"
-              name="password"
-              value={form.password}
-              placeholder="Enter Password"
-              onChange={handleChange}
-            /><br />
+          <label>Email</label><br />
+          <input className='signin_input'
+            required
+            type="text"
+            name="email"
+            value={form.email}
+            placeholder="Enter Email"
+            onChange={handleChange}
+          /><br />
+          <label>Password</label><br />
+          <input className='signin_input'
+            required
+            type="password"
+            name="password"
+            value={form.password}
+            placeholder="Enter Password"
+            onChange={handleChange}
+          /><br />
           {renderError()}
         </form>
       </div>
