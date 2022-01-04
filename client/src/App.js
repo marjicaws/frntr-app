@@ -14,6 +14,7 @@ import Backyard from "./screens/Backyard/Backyard.js";
 import EditProduct from "./screens/EditProduct/EditProduct.js";
 import CreateProduct from "./screens/CreateProduct/CreateProduct.js";
 import AllProduct from "./screens/AllProducts/AllProduct.js";
+import ShoppingCart from "./screens/ShoppingCart/ShoppingCart.js";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -39,6 +40,7 @@ function App() {
         <Route path="/product/edit/:id" element={<EditProduct />} />
         <Route path="/new" element={<CreateProduct />} />
         <Route path="/products" element={<AllProduct />} />
+        <Route path="/cart" element = {<ShoppingCart />} />
       </Routes>
     </div>
   );
