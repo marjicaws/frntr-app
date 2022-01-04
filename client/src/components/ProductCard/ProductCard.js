@@ -15,7 +15,10 @@ export default function ProductCard(props) {
         <h4 className="card-title">{props.title}</h4>
       </div>
       <div className="group">
-        <button className="add-cart" onClick={handleAddCart(props.product)}>
+        <button
+          className="add-cart"
+          onClick={(e) => handleAddCart(props.product, e)}
+        >
           Add to cart
         </button>
         <h6>{props.price}</h6>
