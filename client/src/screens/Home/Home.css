@@ -6,7 +6,7 @@
 }
 
 .recent {
-  /* border: 2px blue solid; */
+  border: 2px blue solid;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -28,6 +28,6 @@
 .recent-cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 250vh;
+  justify-content: space-between;
+  width: 100vw;
 }
