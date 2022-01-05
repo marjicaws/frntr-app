@@ -10,52 +10,58 @@ export default function Carosel() {
             <div className="carousel-main-card-container">
               <div className="carousel-card-container">
                 <div className="carousel-img-container">
-                  <img className="carousel-card-img" />
+                  <img
+                    className="carousel-card-img"
+                    src="https://i.imgur.com/07wvTLD.png"
+                  />
+                  <div>
+                    <h3 className="carousel-banner-text">
+                      Check out this Knives!
+                    </h3>
+                  </div>
                 </div>
-                <div className="carousel-title-container">
-                  <h4 className="carousel-card-title">test</h4>
-                </div>
+                <div className="carousel-title-container"></div>
               </div>
             </div>
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={2500}>
             <div className="carousel-main-card-container">
               <div className="carousel-card-container">
                 <div className="carousel-img-container">
-                  <img className="carousel-card-img" />
+                  <img
+                    className="carousel-card-img"
+                    src="https://i.imgur.com/BwMY57y.png"
+                  />
+                  <div>
+                    <h3 className="carousel-banner-text">
+                      Check out this playset!
+                    </h3>
+                  </div>
                 </div>
-                <div className="carousel-title-container">
-                  <h4 className="carousel-card-title">test</h4>
-                </div>
+                <div className="carousel-title-container"> </div>
               </div>
             </div>
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>
-                You make us look good — shop + get inspired by real life spaces
-                from our Frntr community.
-              </p>
-            </Carousel.Caption>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <div className="carousel-main-card-container">
               <div className="carousel-card-container">
                 <div className="carousel-img-container">
-                  <img className="carousel-card-img" />
+                  <img
+                    className="carousel-card-img"
+                    src="https://i.imgur.com/bnQlORH.png"
+                  />
+                  <div>
+                    <h3 className="carousel-banner-text">
+                      Check out this Chair!
+                    </h3>
+                  </div>
                 </div>
-                <div className="carousel-title-container">
-                  <h4 className="carousel-card-title">test</h4>
-                </div>
+                <div className="carousel-title-container"> </div>
               </div>
             </div>
-            <Carousel.Caption>
-              <h3>New Year, New You, New Look</h3>
-              <p>Essentials Ready and Waiting to Ship</p>
-            </Carousel.Caption>
+            <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>
