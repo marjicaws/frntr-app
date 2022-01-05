@@ -1,0 +1,8 @@
+.displayedProducts_sort  {
+  width: 20vw;
+  height: 6vh;
+  border-radius: 40px;
+  padding: 10px;
+  background: #e0afa0;
+  border: 2px solid black;
+}
