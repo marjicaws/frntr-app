@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../../services/products";
 import ProductCard from "../ProductCard/ProductCard";
 
+
 export default function RecentProducts() {
   const [recentProducts, setRecentProducts] = useState([]);
 
