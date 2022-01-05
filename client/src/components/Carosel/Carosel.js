@@ -14,10 +14,11 @@ export default function Carosel() {
                     className="carousel-card-img"
                     src="https://i.imgur.com/07wvTLD.png"
                   />
-                  <div>
+                  <div className="text-and-button">
                     <h3 className="carousel-banner-text">
-                      Check out this Knives!
+                      Check out these Knives!
                     </h3>
+                    <button className="shop-now">Shop Now!</button>
                   </div>
                 </div>
                 <div className="carousel-title-container"></div>
@@ -33,10 +34,11 @@ export default function Carosel() {
                     className="carousel-card-img"
                     src="https://i.imgur.com/BwMY57y.png"
                   />
-                  <div>
+                  <div className="text-and-button">
                     <h3 className="carousel-banner-text">
                       Check out this playset!
                     </h3>
+                    <button className="shop-now">Shop Now!</button>
                   </div>
                 </div>
                 <div className="carousel-title-container"> </div>
@@ -52,10 +54,11 @@ export default function Carosel() {
                     className="carousel-card-img"
                     src="https://i.imgur.com/bnQlORH.png"
                   />
-                  <div>
+                  <div className="text-and-button">
                     <h3 className="carousel-banner-text">
                       Check out this Chair!
                     </h3>
+                    <button className="shop-now">Shop Now!</button>
                   </div>
                 </div>
                 <div className="carousel-title-container"> </div>
