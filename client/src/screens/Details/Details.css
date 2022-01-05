@@ -1,132 +1,146 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 
 .product-image {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  position: relative;
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-area: main main;
-  display: grid;
+    display: flex;
+   
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    position: relative;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-area: main1 ;
+    display: grid;
+    
+    
+
+
 }
 
 .individual-image {
-  width: 500px;
-  height: auto;
+    width: 500px;
+    height: auto;
 }
 
 .whole-detail {
-  padding-top: 50px;
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "main main . sidebar"
-    "main main . under"
-    "main main . below"
-    "footer footer mtr ftr";
+    padding-top: 50px;
+    display: grid;
+   
+    grid-template-areas: 
+    
+    "main1   sidebar"
+    "main2   under"
+    "main   below";
+    
+    
+  
 }
 
 .product-detail {
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 300px;
-  grid-row: 3 / span 1;
-  grid-column: 2 / span 1;
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #8a817c;
+   
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    width: 50%;
+    
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+    border-bottom: 1px solid #8A817C;
   grid-area: sidebar;
+
+   
+   
+    
+    
+
 }
 
 .dead-links {
-  display: inline-flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  justify-content: space-evenly;
-  color: #463f3a;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  grid-column-end: 3;
-  grid-column-start: 3;
-  font-family: "Roboto", sans-serif;
-  font-size: large;
-  width: 220px;
-  margin-right: 100px;
-  grid-area: under;
+    
+    
+    
+    
+   color: #463F3A;
+   
+   font-family: 'Roboto', sans-serif;
+   font-size: large;
+   width: 150%; 
+   display: flex;
+  justify-content: space-around;
+  margin-left: -8%;
+  
+   
+
+   
+
 }
 
-a {
-  color: #463f3a;
-  text-decoration: underline;
-}
+
 
 h1 {
-  width: 300px;
-  margin-top: 30px;
-  margin-left: -30px;
-  margin-right: -30px;
-  font-family: "Roboto", sans-serif;
-  color: #463f3a;
+    width: 200%;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: -30px;
+    font-family: 'Roboto', sans-serif;
+    color: #463F3A;
 }
 
 h5 {
-  width: 300px;
-  font-family: "Roboto", sans-serif;
-  color: #463f3a;
-  display: inline;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    color: #463F3A;
+    display: inline;
+    
 }
 
 h3 {
-<<<<<<< HEAD
-    width: 100px;
+    display: grid;
+    
     font-family: 'Roboto', sans-serif;
     color: #463F3A;
-    margin-right: 200px;
-=======
-  width: 300px;
-  font-family: "Roboto", sans-serif;
-  color: #463f3a;
->>>>>>> 8264b25e48b8d7da5235d8e3c83ec78c3ca77e6d
+    
 }
 
 .edit-product {
-  color: #463f3a;
-  text-decoration: none;
-  display: grid;
-  background: none;
-  border: none;
+  
+    color: black;
+   
+   display: inline;
+   background-color: #E0AFA0;
+   width: 50%;
+   margin-right: 100%;
+   
+   
+    
+   
+
 }
 
 .edit-btn {
-<<<<<<< HEAD
+   
+    
     display: grid;
     grid-area: below;
+    padding-top: 10px;
+    padding-right: 10px;
     padding-bottom: 20px;
-    
-    background-color: #E0AFA0;
-    color: #463F3A;
+   
+    margin-bottom: 100px;
+    color: black;
     font-family: 'Roboto', sans-serif;
     font-size: large;
     
 }
 
 .edit-product-delete {
+    display: inline-block;
     
 }
-=======
-  display: grid;
-  grid-area: below;
-  padding-bottom: 20px;
-  color: #463f3a;
-  font-family: "Roboto", sans-serif;
-  font-size: large;
-}
->>>>>>> 8264b25e48b8d7da5235d8e3c83ec78c3ca77e6d

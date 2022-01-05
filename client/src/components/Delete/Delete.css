@@ -1,7 +1,8 @@
 button {
-    width: 100px;
+    width: 100%;
     display: inline;
     background-color: #E0AFA0;
+    
     
 
 }
@@ -9,7 +10,10 @@ button {
 .delete-btn {
     display: flex;
    align-items: center;
-   margin-left: 32%;
+   
+   width: 50% ;
+   margin-top: 10px;
+
 }
 
 @media only screen and (max-width: 600px) {

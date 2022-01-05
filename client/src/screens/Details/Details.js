@@ -29,21 +29,24 @@ export default function Details() {
         <h1>{product.title}</h1>
         <h5>{product.description}</h5>
         <h3>{product.price}</h3>
-        </div>
-       
         <div className="dead-links">
         <Link className="dead-link1" to="/products/:id" >Add to Cart</Link>
         <Link className="dead-link2" to="/products/:id">Save to Wishlist</Link>
+        </div>
+        </div>
+       
+        
         <div className="edit-btn">
         <Link to={`/product/edit/${product._id}`} > 
         <button className="edit-product">Edit Product</button>
         </Link>
         
-        </div>
+        
         <div className="edit-product-delete">
         <Delete />
         </div>
         </div>
+        
         
         <div className= "product-image">
         <img className="individual-image"src={product.img} alt="image"   />
