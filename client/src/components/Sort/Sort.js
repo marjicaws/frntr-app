@@ -1,3 +1,5 @@
+
+
 const Sort = (props) => {
   const handleSort = (e) => {
     props.handleSort(e.target.value);
@@ -5,7 +7,7 @@ const Sort = (props) => {
 
   return (
     <form onSubmit={props.handleSubmit}>
-      <select onChange={(e) => handleSort(e)}>
+      <select className="displayedProducts_sort" onChange={(e) => handleSort(e)}>
         <option selected disabled>
           Sort By:
         </option>

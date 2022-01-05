@@ -6,7 +6,7 @@
 }
 
 .recent {
-  border: 2px blue solid;
+  /* border: 2px blue solid; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
