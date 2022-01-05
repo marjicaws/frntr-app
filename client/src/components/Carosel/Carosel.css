@@ -14,7 +14,6 @@
 
 .carousel-card-img {
   display: flex;
-  width: 300px;
   height: 50vh;
   margin: 10px 30px;
 }
@@ -28,52 +27,21 @@
   margin-top: 30px;
   align-items: center;
   box-shadow: 10px 12px 6px rgb(167, 167, 167);
-  /* margin-right: 5rem; */
   margin-bottom: 10px;
-  /* margin-left: 5rem; */
-  transition: 0.3s;
-  animation: ease-in;
 }
 
-.carousel-card-container:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 15px 0px;
-  background: #e0afa0;
-}
-
-.carousel-card-container:hover .img-container {
-  background: white;
-}
 
 .carousel-img-container {
   display: flex;
   border: 2px solid black;
-  justify-content: center;
   background: #e0afa0;
   width: 96%;
   margin-top: -10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* .carousel-add-cart {
-  border: none;
-  width: 120px;
-  height: 50px;
-  font-size: 19px;
-  background: none;
-  transition: 0.3s;
-  animation: ease-in;
-} */
 
-/* .carousel-add-cart:hover {
-  background: #ffffff;
-  color: #8a817c;
-  transform: scale(1.1);
-}
-
-.carousel-add-cart:active {
-  background: black;
-  color: white;
-} */
 
 .carousel-group {
   display: flex;
@@ -101,6 +69,7 @@ h6 {
 .carousel-title-container {
   display: flex;
   width: 360px;
+  justify-content: flex-end;
   /* height: 100px; */
 }
 
@@ -109,4 +78,10 @@ h6 {
   display: flex;
   height: 60vh;
   justify-content: center;
+}
+
+.carousel-banner-text{
+  display: flex;
+  font-size: 70px;
+  color: white;
 }
