@@ -9,7 +9,7 @@ export default function Carosel() {
   <Carousel.Item interval={6000}>
     <img
       className="d-block w-100"
-      src="https://secure.img1-fg.wfcdn.com/im/42300235/scale-h550-w1600%5Ecompr-r85/1801/180149345/Sofa%2527s+and+Sectionals.+They%2527re+back+but+not+for+long.+Shop+Top+Rated+Sofas+and+Sectionals.jpg"
+      src="https://img1.homary.com/filters:format(webp)/ad/2021/12/27/8cf3604785d2f8e6a74e4dc1a4b8f901.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -20,7 +20,7 @@ export default function Carosel() {
   <Carousel.Item interval={2500}>
     <img
       className="d-block w-100"
-      src="https://secure.img1-fg.wfcdn.com/im/05423003/scale-h550-w1600%5Ecompr-r85/1617/161726462/Comfort+Zone.+Create+the+ultimate+space+to+unwind+with+laid+back+designs+that+redefine+rest..jpg"
+      src="https://img1.homary.com/filters:format(webp)/ad/2021/12/31/bd76c1d859112bd01fa07f99df862305.jpg"
       alt="New Year Deals"
     />
     <Carousel.Caption>
