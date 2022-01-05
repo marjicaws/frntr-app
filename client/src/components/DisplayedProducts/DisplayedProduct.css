@@ -4,13 +4,14 @@
   flex-direction: row;
   justify-content: center;
   /* border: 5px solid #000000; */
-  align-items: center;
-  align-content: center;
   /* border: 3px solid red; */
 }
 
 .sort_search_container {
   display: flex;
-  justify-content: flex-end;
+  flex-flow: column;
+  justify-content: center;
   margin-right: 5vw;
+  /* border: 3px solid red; */
+  width: 99vw;
 }

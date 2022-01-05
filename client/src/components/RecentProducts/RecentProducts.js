@@ -8,14 +8,14 @@ export default function RecentProducts() {
   useEffect(() => {
     const findRecentProducts = async () => {
       const foundRecentProdcuts = await getProducts();
-      setRecentProducts(foundRecentProdcuts.reverse().slice(0, 6));
+      setRecentProducts(foundRecentProdcuts.reverse().slice(0, 3));
     };
     findRecentProducts();
   }, []);
   return (
     <div>
-      <div className='all-container'>
-      <div className='order-cards'>
+      <h2 className="recentProducts-title">Newly Added Products</h2>
+    <div className="recent-cards">
       {recentProducts.map((product) => (
         <ProductCard
           id={product?._id}
@@ -26,8 +26,7 @@ export default function RecentProducts() {
           category={product?.category}
         />
       ))}
-        </div>
-        </div>
-    </div>
+      </div>
+      </div>
   );
 }

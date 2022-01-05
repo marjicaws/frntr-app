@@ -56,3 +56,7 @@ label{
   width: 10vw;
   padding: 5px;
 }
+
+.signup_button:hover {
+background-color: #ddc0b7;
+}

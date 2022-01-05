@@ -78,3 +78,5 @@ Frntr is an online shopping web app where users can create an account and shop f
 ## Team Expectations
 
 [Click here](https://docs.google.com/document/d/1cCRP53bbE9suJjdM5Thpyvb2b_W6Zo5YQERDilt-ew8/edit?usp=sharing)
+
+.

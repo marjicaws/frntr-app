@@ -16,7 +16,7 @@ export default function ShoppingCart() {
       setCart(newCart);
       let total = 0;
       newCart.map((product) => {
-      return total += parseInt(product.price.slice(1));
+        return (total += parseInt(product.price.slice(1)));
       });
       setCartTotal(total);
       setCartItems(newCart.length);
@@ -41,20 +41,37 @@ export default function ShoppingCart() {
 
   return (
     <Layout>
-      <div classsName="all-cart-container">
-        <>
-          {cart.map((product, index) => (
-            <CartCard
-              product={product}
-              handleDeleteProduct={handleDeleteProduct}
-              index={index}
-            />
-          ))}
-          <h2>Total amount: ${cartTotal}</h2>
-          <h3>Number of Items: {cartItems}</h3>
-          <button onClick={(e) => handleDeleteCart(e)}>Delete Cart</button>
-          <p>bottom</p>
-        </>
+      <div className="all-cart-container">
+        <div className="all-cart-cards">
+          {cart ? (
+            cart.map((product, index) => (
+              <CartCard
+                product={product}
+                handleDeleteProduct={handleDeleteProduct}
+                index={index}
+              />
+            ))
+          ) : (
+            <h3>Your Cart is Empty</h3>
+          )}
+        </div>
+        <div className="cart-description">
+          <div className="cart-info">
+            <h3>Total amount: ${cartTotal}</h3>
+            <h3>Number of Items: {cartItems}</h3>
+          </div>
+          <br />
+          <br />
+          <div className="delete-cart">
+            {cart.length === 0 ? (
+              <h3>Your Cart Is Empty</h3>
+            ) : (
+              <button onClick={(e) => handleDeleteCart(e)}>Delete Cart</button>
+            )}
+          </div>
+        </div>
+        <br />
+        <br />
       </div>
     </Layout>
   );

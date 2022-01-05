@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
-import "../ProductCard/ProductCard.css";
+import "./CartCard.css";
 
 export default function CartCard({ product, index, handleDeleteProduct }) {
   return (
-    <div className="card-container" key={product.key}>
-      <Link to={`/products/${product.id}`}>
-        <div className="img-container">
-          <img className="card-img" src={product.img} alt={product.id} />
+    <div className="cart-card-container" key={product.key}>
+      <Link to={`/products/${product._id}`}>
+        <div className="cart-img-container">
+          <img className="cart-card-img" src={product.img} alt={product.id} />
         </div>
       </Link>
-      <div className="title-container">
-        <h4 className="card-title">{product.title}</h4>
+      <div className="cart-title-container">
+        <h4 className="cart-card-title">{product.title}</h4>
       </div>
-      <div className="group">
+      <div className="cart-group">
         <button
-          className="add-cart"
+          className="cart-add-cart"
           onClick={(e) => handleDeleteProduct(e, index)}
         >
           Remove
