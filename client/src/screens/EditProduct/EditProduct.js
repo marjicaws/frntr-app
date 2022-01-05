@@ -38,7 +38,7 @@ export default function EditProduct() {
     <div>
       
       <form className="edit-products">
-        <h1>Edit Product</h1>
+        <h1 className='edit-product-title'>Edit Product</h1>
         <h5>Fill in the form below to make changes to a product.</h5>
         <input
           className="title-input"

@@ -110,9 +110,10 @@ h5 {
 }
 
 h3 {
-    width: 300px;
+    width: 100px;
     font-family: 'Roboto', sans-serif;
     color: #463F3A;
+    margin-right: 200px;
 }
 
 .edit-product {
@@ -131,8 +132,15 @@ h3 {
 .edit-btn {
     display: grid;
     grid-area: below;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
+    
+    background-color: #E0AFA0;
     color: #463F3A;
     font-family: 'Roboto', sans-serif;
     font-size: large;
+    
+}
+
+.edit-product-delete {
+    
 }
