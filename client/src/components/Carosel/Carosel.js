@@ -1,7 +1,16 @@
 import Carousel from "react-bootstrap/Carousel";
 import "./Carosel.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Carosel() {
+
+  let navigate = useNavigate(); 
+  
+  const handleClick = (e) => {
+    e.preventDefault()
+    navigate("/products")
+  }
+
   return (
     <div className="more-containers">
       <div className="carousel-container">
@@ -18,7 +27,7 @@ export default function Carosel() {
                     <h3 className="carousel-banner-text">
                       Check out these Knives!
                     </h3>
-                    <button className="shop-now">Shop Now!</button>
+                    <button className="shop-now" onClick = {handleClick}>Shop Now!</button>
                   </div>
                 </div>
                 <div className="carousel-title-container"></div>
@@ -38,7 +47,7 @@ export default function Carosel() {
                     <h3 className="carousel-banner-text">
                       Check out this playset!
                     </h3>
-                    <button className="shop-now">Shop Now!</button>
+                    <button className="shop-now" onClick = {handleClick}>Shop Now!</button>
                   </div>
                 </div>
                 <div className="carousel-title-container"> </div>
@@ -58,7 +67,7 @@ export default function Carosel() {
                     <h3 className="carousel-banner-text">
                       Check out this Chair!
                     </h3>
-                    <button className="shop-now">Shop Now!</button>
+                    <button className="shop-now" onClick = {handleClick}>Shop Now!</button>
                   </div>
                 </div>
                 <div className="carousel-title-container"> </div>
