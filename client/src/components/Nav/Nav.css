@@ -23,8 +23,9 @@ a {
 }
 
 .nav-links:hover {
-  border: solid 6px;
+  border-radius:  3px;
   border-color: #e0afa0;
+
 }
 
 .home-link {
@@ -47,7 +48,7 @@ a {
 }
 
 .cart:hover {
-  border: solid 6px;
+  border-radius: 3px;
   border-color: #e0afa0;
   padding: 5px;
 }
