@@ -26,9 +26,9 @@ export default function Details() {
     <Layout>
       <div className="whole-detail">
         <div className="product-detail">
-        <h1>{product.title}</h1>
-        <h5>{product.description}</h5>
-        <h3>{product.price}</h3>
+        <h1 className="detail-title">{product.title}</h1>
+        <h5 className="detail-description">{product.description}</h5>
+        <h3 className="detail-price">{product.price}</h3>
         <div className="dead-links">
         <Link className="dead-link1" to="/products/:id" >Add to Cart</Link>
         <Link className="dead-link2" to="/products/:id">Save to Wishlist</Link>
