@@ -16,13 +16,9 @@
   /* border: 2px green solid; */
 }
 
-.banner-img {
-  height: 500px;
-  width: 1500px;
-}
-
 .banner {
-  margin-top: 100px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .recent-cards {
