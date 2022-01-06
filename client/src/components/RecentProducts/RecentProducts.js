@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../../services/products";
 import ProductCard from "../ProductCard/ProductCard";
+import './RecentProducts.css'
 
 
 export default function RecentProducts() {
@@ -9,7 +10,7 @@ export default function RecentProducts() {
   useEffect(() => {
     const findRecentProducts = async () => {
       const foundRecentProdcuts = await getProducts();
-      setRecentProducts(foundRecentProdcuts.reverse().slice(0, 3));
+      setRecentProducts(foundRecentProdcuts.reverse().slice(0, 4));
     };
     findRecentProducts();
   }, []);
