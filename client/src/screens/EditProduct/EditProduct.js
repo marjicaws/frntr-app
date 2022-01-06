@@ -38,7 +38,7 @@ export default function EditProduct() {
     <div>
       
       <form className="edit-products">
-        <h1>Edit Product</h1>
+        <h1 className='edit-product-title'>Edit Product</h1>
         <h5>Fill in the form below to make changes to a product.</h5>
         <input
           className="title-input"
@@ -83,9 +83,7 @@ export default function EditProduct() {
       <button className='edit-product-btn' onClick={(e) => handleSubmit(e)}>Edit</button>
       </div>
       </form>
-    <div >
-     <img className='edit-product-img' src="https://is4.revolveassets.com/images/up/2021/December/120921_f_sale_banner.jpg" alt="banner"/>
-     </div>
+    
     </div>
     </Layout>
   )

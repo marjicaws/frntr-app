@@ -43,13 +43,17 @@ export default function ShoppingCart() {
     <Layout>
       <div className="all-cart-container">
         <div className="all-cart-cards">
-          {cart.map((product, index) => (
-            <CartCard
-              product={product}
-              handleDeleteProduct={handleDeleteProduct}
-              index={index}
-            />
-          ))}
+          {cart ? (
+            cart.map((product, index) => (
+              <CartCard
+                product={product}
+                handleDeleteProduct={handleDeleteProduct}
+                index={index}
+              />
+            ))
+          ) : (
+            <h3>Your Cart is Empty</h3>
+          )}
         </div>
         <div className="cart-description">
           <div className="cart-info">
@@ -59,7 +63,11 @@ export default function ShoppingCart() {
           <br />
           <br />
           <div className="delete-cart">
-            <button onClick={(e) => handleDeleteCart(e)}>Delete Cart</button>
+            {cart.length === 0 ? (
+              <h3>Your Cart Is Empty</h3>
+            ) : (
+              <button onClick={(e) => handleDeleteCart(e)}>Delete Cart</button>
+            )}
           </div>
         </div>
         <br />

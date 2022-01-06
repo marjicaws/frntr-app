@@ -1,5 +1,14 @@
-.displayedProducts_searchbar  {
-  width: 20vw;
-  margin-bottom: 5px;
-  /* border: 1px solid red; */
+.displayedProducts_searchbar {
+  width: 30vw;
+  height: 6vh;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  font-size: 20px;
+  background: #e0afa0;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.displayedProducts_searchbar::placeholder  {
+  color: black;
 }

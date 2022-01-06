@@ -16,18 +16,14 @@
   /* border: 2px green solid; */
 }
 
-.banner-img {
-  height: 500px;
-  width: 1500px;
-}
-
 .banner {
-  margin-top: 100px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .recent-cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 250vh;
+  justify-content: space-between;
+  width: 100vw;
 }

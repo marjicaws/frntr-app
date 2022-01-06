@@ -20,7 +20,7 @@ export default function ProductCard(props) {
           className="add-cart"
           onClick={(e) => handleAddCart(props.product, e)}
         >
-          Add to cart
+          Add to <img className="mini-cart" src="https://i.imgur.com/DMlqxwl.png" alt="cart-mini" />
         </button>
         <h6>{props.price}</h6>
       </div>

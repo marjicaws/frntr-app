@@ -24,6 +24,7 @@ export default function FeaturedProducts() {
 
   return (
     <div>
+      <h2 className="featuredProducts-title">Featured Products</h2>
       <div className="featured-cards">
         {featuredProductArr.map((product) => (
           <ProductCard

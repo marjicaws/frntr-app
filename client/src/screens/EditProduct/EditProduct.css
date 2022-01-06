@@ -2,10 +2,17 @@
     display: grid;
     
     background-color: #8A817C ;
-    margin: 20px 100px 0 100px;
+    margin: 20px 300px 0 300px;
     padding-bottom: 50px;
 }
+.edit-product-title {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
 
+
+}
 .title-input {
     margin: 50px 100px 0px 100px;
     
@@ -30,13 +37,16 @@
 
 .multiple-btn {
     display: flex;
-    
+    justify-content: center;
 
 }
 
 .edit-product-btn {
-  margin-left: 80px;
-    
+  margin-left: 40px;
+  background-color: #E0AFA0;  
+  width: 40%;
+  margin-top: 10px;
+  
 }
 
 .edit-product-img {
@@ -46,6 +56,12 @@
     margin-bottom: 100px;
 }
 
+.detail-delete {
+    display: grid;
+    width: 100%;
+    grid-area: below;
+    
+}
 
 
 

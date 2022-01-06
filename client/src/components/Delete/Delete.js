@@ -22,7 +22,7 @@ export default function Delete() {
 
   return (
     <div className='delete-btn'>
-      <button onClick={handleDelete}>Delete This</button>
+      <button className="button"onClick={handleDelete}>Delete</button>
     </div>
   )
 }

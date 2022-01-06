@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout/Layout";
 import DisplayedProducts from "../../components/DisplayedProducts/DisplayedProducts";
+import "./AllProducts.css";
 
 import { getProducts } from "../../services/products";
 import { useEffect, useState } from "react";
@@ -19,7 +20,7 @@ export default function AllProduct() {
 
   return (
     <Layout>
-      {console.log(products)}
+      <h1 className="all-title">All Products</h1>
       {products ? (
         <DisplayedProducts
           products={products}
