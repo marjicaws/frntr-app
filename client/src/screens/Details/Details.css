@@ -14,7 +14,7 @@
     grid-area: main1 ;
     display: grid;
     
-    
+    width: 150%;
 
 
 }
@@ -84,7 +84,7 @@
 
 
 
-h1 {
+.detail-title {
     width: 200%;
     margin-top: 30px;
     margin-left: 0px;
@@ -93,7 +93,7 @@ h1 {
     color: #463F3A;
 }
 
-h5 {
+.detail-description {
     width: 300px;
     font-family: 'Roboto', sans-serif;
     color: #463F3A;
@@ -101,7 +101,7 @@ h5 {
     
 }
 
-h3 {
+.detail-price {
     display: grid;
     
     font-family: 'Roboto', sans-serif;
