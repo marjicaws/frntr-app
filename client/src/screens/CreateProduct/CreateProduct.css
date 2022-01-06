@@ -22,11 +22,15 @@
 .createProduct_form > input {
   margin-top: 10px;
   margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 5px;
 }
 
 .createProduct_form > select {
   margin-top: 10px;
   margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 5px;
 }
 
 .createProduct_title  {
@@ -34,6 +38,7 @@
   margin: 0 auto;
   color: #F4F3EE;
   border-bottom: 1px solid black;
+  font-size: 50px;
 }
 
 .createProduct_description {
