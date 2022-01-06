@@ -53,9 +53,9 @@ a {
 }
 
 .nav-img {
+  width: 20vw;
+  padding-left: 20px;  
   
-  width: 30vw;
-  padding-left: 20px;
-  padding-bottom: 20vh;
+ 
   
 }
