@@ -8,13 +8,14 @@
 }
 .nav-links {
   color: #463f3a;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: .5em;
   text-decoration: none;
   background: none;
   overflow: hidden;
-  transition: 0.3s;
-  animation: ease-in;
+  border: solid 6px;
+  border-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 a {
@@ -22,10 +23,8 @@ a {
 }
 
 .nav-links:hover {
-  transform: scale(1.1);
-  background: #e0afa0;
-  border-radius: 35px;
-  padding: 5px;
+  border: solid 6px;
+  border-color: #e0afa0;
 }
 
 .home-link {
@@ -43,14 +42,13 @@ a {
 }
 
 .cart {
-  width: 50px;
+  width: 80px;
   text-decoration: none;
 }
 
 .cart:hover {
-  transform: scale(1.1);
-  background: #e0afa0;
-  border-radius: 20px;
+  border: solid 6px;
+  border-color: #e0afa0;
   padding: 5px;
 }
 
