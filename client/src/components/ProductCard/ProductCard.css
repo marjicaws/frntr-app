@@ -43,8 +43,8 @@
 
 .add-cart {
   border: none;
-  width: 120px;
-  height: 50px;
+  width: fit-content;
+  height: fit-content;
   font-size: 19px;
   background: none;
   transition: 0.3s;
@@ -58,8 +58,8 @@
 }
 
 .add-cart:active {
-  background: black;
-  color: white;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .group {
@@ -96,4 +96,16 @@ h6 {
   display: flex;
   flex-basis: 30%;
   justify-content: center;
+}
+
+.mini-cart {
+  width: 2vw;
+  height: 4vh;
+}
+.add-cart:hover .mini-cart {
+  filter: invert(0.5);
+}
+
+.add-cart:active .mini-cart {
+  filter: invert(1);
 }
