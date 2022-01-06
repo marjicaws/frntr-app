@@ -21,7 +21,35 @@
   font-weight: bold;
   font-size: 50px;
 }
+@media only screen and (max-width: 800px) {
+  .title-about {
+    font-size: 5vw;
+    margin-top: -2vw;
+  }
 
+  .about-text {
+    display: flex;
+    font-size: 40px;
+    margin-top: 80px;
+    padding-left: 5vw;
+    margin-right: 15vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title-about {
+    font-size: 5vw;
+    margin-top: -5vw;
+  }
+
+  .about-text {
+    display: flex;
+    font-size: 40px;
+    margin-top: 80px;
+    padding-left: 2vw;
+    margin-right: 8vw;
+  }
+}
 .big-container-about {
   display: flex;
   flex-flow: column wrap;
@@ -43,7 +71,7 @@
 .about-text {
   display: flex;
   font-size: 40px;
-  margin-left: 10vw;
+  margin-right: 5vw;
   margin-top: 80px;
 }
 
