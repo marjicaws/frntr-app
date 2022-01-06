@@ -38,6 +38,7 @@ label{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  
 }
 
 .signup_input  {
@@ -53,8 +54,10 @@ label{
   margin: auto;
   text-align: center;
   background-color: #E0AFA0;
-  width: 10vw;
+  width: 24vw;
   padding: 5px;
+  
+  
 }
 
 .signup_button:hover {
