@@ -1,11 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
-
 .product-image {
     display: flex;
-   
     justify-content: flex-start;
+    margin-left: 20vw;
+    margin-bottom: 20vh;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     position: relative;
@@ -14,76 +13,40 @@
     grid-area: main1 ;
     display: grid;
     
-    width: 150%;
-
-
 }
-
 .individual-image {
     width: 500px;
     height: auto;
 }
-
 .whole-detail {
     padding-top: 50px;
     display: grid;
-   
-    grid-template-areas: 
-    
+    grid-template-areas:
     "main1   sidebar"
-    "main2   under"
-    "main   below";
-    
-    
-  
+"main1 sidebar"
+"main1 buttons"
+"main1 under"
+"main   below";
 }
-
 .product-detail {
-   
     display: flex;
     text-align: left;
     flex-direction: column;
     justify-content: flex-start;
-    
-    width: 50%;
-    
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    
+    width: 20vw;
+  
     border-bottom: 1px solid #8A817C;
   grid-area: sidebar;
-
-   
-   
-    
-    
-
 }
-
 .dead-links {
-    
-    
-    
-    
    color: #463F3A;
-   
    font-family: 'Roboto', sans-serif;
    font-size: large;
-   width: 100%; 
+   width: 100%;
    display: flex;
   justify-content: space-around;
   margin-left: -13%;
-  
-   
-
-   
-
 }
-
-
-
 .detail-title {
     width: 200%;
     margin-top: 30px;
@@ -92,55 +55,55 @@
     font-family: 'Roboto', sans-serif;
     color: #463F3A;
 }
-
 .detail-description {
     width: 300px;
     font-family: 'Roboto', sans-serif;
     color: #463F3A;
     display: inline;
-    
 }
-
 .detail-price {
     display: grid;
-    
     font-family: 'Roboto', sans-serif;
     color: #463F3A;
-    
 }
-
 .edit-product {
-  
     color: black;
-   
    display: inline;
    background-color: #E0AFA0;
-   width: 50%;
+   width: 24vw;
    margin-right: 100%;
-   
-   
-    
-   
-
 }
-
 .edit-btn {
-   
-    
     display: grid;
-    grid-area: below;
-    padding-top: 10px;
+    grid-area: buttons;
+    margin-top: 5vh;
     padding-right: 10px;
     padding-bottom: 20px;
-   
     margin-bottom: 100px;
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: large;
-    
 }
-
 .edit-product-delete {
     display: inline-block;
-    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -43,7 +43,7 @@ export default function Details() {
         
         
         <div className="edit-product-delete">
-        <Delete />
+        <Delete className=".detail-delete"/>
         </div>
         </div>
         

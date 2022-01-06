@@ -2,7 +2,7 @@
     display: grid;
     
     background-color: #8A817C ;
-    margin: 20px 200px 0 200px;
+    margin: 20px 300px 0 300px;
     padding-bottom: 50px;
 }
 .edit-product-title {
@@ -37,13 +37,16 @@
 
 .multiple-btn {
     display: flex;
-    
+    justify-content: center;
 
 }
 
 .edit-product-btn {
   margin-left: 40px;
-    
+  background-color: #E0AFA0;  
+  width: 40%;
+  margin-top: 10px;
+  
 }
 
 .edit-product-img {
@@ -53,6 +56,12 @@
     margin-bottom: 100px;
 }
 
+.detail-delete {
+    display: grid;
+    width: 100%;
+    grid-area: below;
+    
+}
 
 
 

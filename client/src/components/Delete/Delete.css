@@ -1,4 +1,4 @@
-button {
+.button {
     width: 100%;
     display: inline;
     background-color: #E0AFA0;
@@ -8,16 +8,18 @@ button {
 }
 
 .delete-btn {
-    display: flex;
-   align-items: center;
+    
    
-   width: 50% ;
+   width: 24vw ;
    margin-top: 10px;
+   
 
 }
 
-@media only screen and (max-width: 600px) {
-    .delete-btn {
-     margin-left: 10%;
-    }
-  }
+.detail-delete {
+    display: grid;
+    width: 100%;
+    grid-area: below;
+    
+}
+
