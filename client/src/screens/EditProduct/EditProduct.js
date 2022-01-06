@@ -83,9 +83,7 @@ export default function EditProduct() {
       <button className='edit-product-btn' onClick={(e) => handleSubmit(e)}>Edit</button>
       </div>
       </form>
-    <div >
-     <img className='edit-product-img' src="https://is4.revolveassets.com/images/up/2021/December/120921_f_sale_banner.jpg" alt="banner"/>
-     </div>
+    
     </div>
     </Layout>
   )
