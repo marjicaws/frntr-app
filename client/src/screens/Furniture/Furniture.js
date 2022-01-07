@@ -5,7 +5,7 @@ import Layout from "../../components/Layout/Layout";
 import "./Furniture.css";
 import { getFurniture } from "../../services/products.js";
 
-export default function Furniture() {
+export default function Furniture({ user }) {
   const [furniture, setFurniture] = useState([]);
   const [searchedProducts, setSearchedProducts] = useState([]);
 
@@ -25,6 +25,7 @@ export default function Furniture() {
         <div className="order-furniture-cards">
           {furniture ? (
             <DisplayedProducts
+              user={user}
               products={furniture}
               setSearchedProducts={setSearchedProducts}
               searchedProducts={searchedProducts}

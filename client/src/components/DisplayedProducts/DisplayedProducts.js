@@ -1,7 +1,7 @@
 import Sort from "../Sort/Sort";
 import Search from "../Search/Search";
 import ProductCard from "../ProductCard/ProductCard";
-import './DisplayedProduct.css'
+import "./DisplayedProduct.css";
 import { useState } from "react";
 import { sortAZ, sortZA, priceLH, priceHL } from "../../utils/sort";
 
@@ -9,6 +9,7 @@ export default function DisplayedProducts({
   products,
   setSearchedProducts,
   searchedProducts,
+  user,
 }) {
   const [applySort, setApplySort] = useState(true);
 
@@ -43,25 +44,25 @@ export default function DisplayedProducts({
   return (
     <div>
       <div className="sort_search_container">
-      <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-      <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+        <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
+        <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       </div>
       <div className="all-container">
-      {searchedProducts.map((product) => {
-        return (
-        
-          <ProductCard
-            product={product}
-            id={product?._id}
-            title={product?.title}
-            img={product?.img}
-            description={product?.description}
-            price={product?.price}
-            category={product?.category}
-          />
-        );
-      })}
-        </div>
+        {searchedProducts.map((product) => {
+          return (
+            <ProductCard
+              user={user}
+              product={product}
+              id={product?._id}
+              title={product?.title}
+              img={product?.img}
+              description={product?.description}
+              price={product?.price}
+              category={product?.category}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
