@@ -198,6 +198,7 @@ const insertData = async () => {
     username: "LilyPott",
     email: "lpott@gmail.com",
     role: "user",
+    products: [],
     password_digest: await bcrypt.hash("butterfly", 11),
   });
   await user.save();
@@ -206,6 +207,7 @@ const insertData = async () => {
     username: "ApplePott",
     email: "apott@yahoo.com",
     role: "user",
+    products: [],
     password_digest: await bcrypt.hash("swanSong", 11),
   });
 
@@ -214,6 +216,7 @@ const insertData = async () => {
     username: "RosePott",
     email: "rpott@gmail.com",
     role: "admin",
+    products: [],
     password_digest: await bcrypt.hash("butterfly", 11),
   });
 

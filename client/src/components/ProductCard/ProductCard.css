@@ -1,16 +1,20 @@
 .card-img {
   display: flex;
-  width: 300px;
-  height: 250px;
+  width: 15vw;
+  height: 25vh;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
 }
 
 .card-container {
   display: flex;
   border: 2px solid black;
-  width: 360px;
-  height: 375px;
+  width: 17vw;
+  height: 35vh;
   flex-flow: column nowrap;
   margin-top: 100px;
   align-items: center;
@@ -23,13 +27,13 @@
 }
 
 .card-container:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   box-shadow: 0px 0px 15px 0px;
-  background: #e0afa0;
+  /* background: #e0afa0; */
 }
 
 .card-container:hover .img-container {
-  background: white;
+  /* background: white; */
 }
 
 .img-container {
@@ -37,7 +41,7 @@
   border: 2px solid black;
   justify-content: center;
   background: #e0afa0;
-  width: 340px;
+  width: 13vw;
   margin-top: -60px;
 }
 
@@ -47,14 +51,13 @@
   height: fit-content;
   font-size: 19px;
   background: none;
-  transition: 0.3s;
+  transition: 0.5s;
   animation: ease-in;
 }
 
 .add-cart:hover {
-  background: #ffffff;
+  background: #e0afa0;
   color: #8a817c;
-  transform: scale(1.1);
 }
 
 .add-cart:active {
@@ -64,7 +67,7 @@
 
 .group {
   display: flex;
-  width: 325px;
+  width: 14vw;
   /* border: 3px solid black; */
   height: 50px;
   align-items: center;
@@ -83,19 +86,24 @@ h6 {
   font-weight: 378;
   margin-left: 26px;
   margin-top: 20px;
+  justify-content: flex-start;
 }
 
 .title-container {
   display: flex;
-  width: 360px;
-  height: 100px;
+  /* justify-content: flex-start; */
+  padding-right: 2vw;
+  width: 17vw;
+  height: 8vh;
 }
 
 .main-card-container {
   /* border: 5px solid blue; */
   display: flex;
-  flex-basis: 30%;
+  flex-basis: 25%;
   justify-content: center;
+  height: 50vh;
+  margin-top: 5vh;
 }
 
 .mini-cart {

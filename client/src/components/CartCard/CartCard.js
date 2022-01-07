@@ -15,7 +15,7 @@ export default function CartCard({ product, index, handleDeleteProduct }) {
       <div className="cart-group">
         <button
           className="cart-add-cart"
-          onClick={(e) => handleDeleteProduct(e, index)}
+          onClick={(e) => handleDeleteProduct(e, index, product._id)}
         >
           Remove
         </button>

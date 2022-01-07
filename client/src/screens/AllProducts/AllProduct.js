@@ -5,7 +5,7 @@ import "./AllProducts.css";
 import { getProducts } from "../../services/products";
 import { useEffect, useState } from "react";
 
-export default function AllProduct() {
+export default function AllProduct({ user }) {
   const [products, setProducts] = useState([]);
   const [searchedProducts, setSearchedProducts] = useState([]);
 
@@ -23,6 +23,7 @@ export default function AllProduct() {
       <h1 className="all-title">All Products</h1>
       {products ? (
         <DisplayedProducts
+          user={user}
           products={products}
           setSearchedProducts={setSearchedProducts}
           searchedProducts={searchedProducts}

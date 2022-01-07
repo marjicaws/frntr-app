@@ -71,3 +71,39 @@ export const deleteProduct = async (id) => {
     throw error;
   }
 };
+
+export const addToCart = async (id, cartItemId) => {
+  try {
+    const res = await api.post(`/users/${id}/cart/${cartItemId}`);
+    return res.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const getCart = async (id) => {
+  try {
+    const res = await api.get(`users/${id}/cart`);
+    return res.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const removeFromCart = async (id, cartItemId) => {
+  try {
+    const res = await api.delete(`/users/${id}/cart/${cartItemId}`);
+    return res.data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const clearCart = async (id) => {
+  try {
+    const res = await api.delete(`/users/${id}/cart`);
+    return res.data;
+  } catch (error) {
+    throw error;
+  }
+};

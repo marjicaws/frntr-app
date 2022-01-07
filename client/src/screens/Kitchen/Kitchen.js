@@ -4,7 +4,7 @@ import Layout from "../../components/Layout/Layout.js";
 import { getKitchen } from "../../services/products.js";
 import "./Kitchen.css";
 
-export default function Kitchen() {
+export default function Kitchen({ user }) {
   const [kitchen, setKitchen] = useState([]);
   const [searchedProducts, setSearchedProducts] = useState([]);
 
@@ -19,11 +19,12 @@ export default function Kitchen() {
 
   return (
     <Layout>
-    <h1 className="kitchen_title">Kitchen/Dining</h1>
+      <h1 className="kitchen_title">Kitchen/Dining</h1>
       <div className="all-kitchen-container">
         <div className="order-kitchen-cards">
           {kitchen ? (
             <DisplayedProducts
+              user={user}
               products={kitchen}
               setSearchedProducts={setSearchedProducts}
               searchedProducts={searchedProducts}

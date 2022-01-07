@@ -1,17 +1,18 @@
-footer  {
-  position: fixed;
+footer {
+  position: relative;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 40px;
-  background-color: #BCB8B1;
+  height: 60px;
+  background-color: #bcb8b1;
+  margin-top: 25vh;
 }
 
 .footer-social {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   padding: 4px;
 }
 
@@ -20,6 +21,6 @@ footer  {
   margin-left: 10px;
 }
 
-.footer-text  {
+.footer-text {
   color: white;
 }

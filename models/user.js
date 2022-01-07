@@ -7,6 +7,14 @@ const User = new Schema(
     email: { type: String, required: true },
     password_digest: { type: String, required: true, select: false },
     role: { type: String },
+    cart: [
+      {
+        productId: {
+          type: Schema.Types.ObjectId,
+          refs: "products",
+        },
+      },
+    ],
   },
   { timestamps: true }
 );

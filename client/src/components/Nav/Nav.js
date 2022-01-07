@@ -9,7 +9,7 @@ export default function Nav() {
           <Link to="/">
             <img
               className="nav-img"
-              src="https://res.cloudinary.com/marssantos/image/upload/v1641312116/Frntr_Logo_i4y18a.png"
+              src="https://res.cloudinary.com/marssantos/image/upload/v1641500471/Frntr_ifkhwz.png"
             />
           </Link>
         </div>
