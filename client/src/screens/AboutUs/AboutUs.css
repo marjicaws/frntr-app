@@ -39,7 +39,7 @@
 @media only screen and (max-width: 600px) {
   .title-about {
     font-size: 5vw;
-    margin-top: -5vw;
+    margin-top: -6vh;
   }
 
   .about-text {
