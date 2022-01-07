@@ -3,7 +3,7 @@ import ProductCard from "../ProductCard/ProductCard.js";
 import { useEffect, useState } from "react";
 import { getKitchen, getBackyard, getFurniture } from "../../services/products";
 
-export default function FeaturedProducts() {
+export default function FeaturedProducts({ user }) {
   const [featuredProductArr, setFeaturedProductArr] = useState([]);
 
   useEffect(() => {
@@ -28,6 +28,8 @@ export default function FeaturedProducts() {
       <div className="featured-cards">
         {featuredProductArr.map((product) => (
           <ProductCard
+            user={user}
+            product={product}
             id={product?._id}
             title={product?.title}
             img={product?.img}

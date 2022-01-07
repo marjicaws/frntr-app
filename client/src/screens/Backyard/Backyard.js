@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import Layout from "../../components/Layout/Layout.js";
 import { getBackyard } from "../../services/products.js";
 import DisplayedProducts from "../../components/DisplayedProducts/DisplayedProducts.js";
-import './Backyard.css'
+import "./Backyard.css";
 
-export default function Backyard() {
+export default function Backyard({ user }) {
   const [backyard, setBackyard] = useState([]);
   const [searchedProducts, setSearchedProducts] = useState([]);
 
@@ -25,6 +25,7 @@ export default function Backyard() {
         <div className="order-backyard-cards">
           {backyard ? (
             <DisplayedProducts
+              user={user}
               products={backyard}
               setSearchedProducts={setSearchedProducts}
               searchedProducts={searchedProducts}

@@ -1,42 +1,63 @@
 import { useEffect, useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import CartCard from "../../components/CartCard/CartCard";
+import { getCart, clearCart, removeFromCart } from "../../services/products";
 import "./ShoppingCart.css";
 
-export default function ShoppingCart() {
+export default function ShoppingCart({ user }) {
   const [cart, setCart] = useState([]);
   const [toggle, setToggle] = useState(true);
   const [cartItems, setCartItems] = useState();
   const [cartTotal, setCartTotal] = useState();
 
   useEffect(() => {
-    const grabCart = () => {
-      let newCart = JSON.parse(localStorage.getItem("cart"));
-      console.log(newCart);
-      setCart(newCart);
-      let total = 0;
-      newCart.map((product) => {
-        return (total += parseInt(product.price.slice(1)));
-      });
-      setCartTotal(total);
-      setCartItems(newCart.length);
+    const grabCart = async () => {
+      if (user) {
+        const res = await getCart(user.id);
+        setCart(res);
+        let total = 0;
+        res.map((product) => {
+          total += parseInt(product.price.slice(1));
+        });
+        setCartItems(res.length);
+        setCartTotal(total);
+      } else {
+        let newCart = JSON.parse(localStorage.getItem("cart"));
+        setCart(newCart);
+        let total = 0;
+        newCart.map((product) => {
+          return (total += parseInt(product.price.slice(1)));
+        });
+        setCartTotal(total);
+        setCartItems(newCart.length);
+      }
     };
     grabCart();
   }, [toggle]);
 
   const handleDeleteCart = (e) => {
     e.preventDefault();
-    const clearCart = [];
-    localStorage.setItem("cart", JSON.stringify(clearCart));
-    setToggle(!toggle);
+    if (user) {
+      clearCart(user.id);
+      setToggle(!toggle);
+    } else {
+      const clearCart = [];
+      localStorage.setItem("cart", JSON.stringify(clearCart));
+      setToggle(!toggle);
+    }
   };
 
-  const handleDeleteProduct = (e, index) => {
+  const handleDeleteProduct = async (e, index) => {
     e.preventDefault();
-    setCart(cart.splice(index, 1));
-    console.log(cart);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    setToggle(!toggle);
+    if (user) {
+      await removeFromCart(user.id, index);
+      setToggle(!toggle);
+    } else {
+      setCart(cart.splice(index, 1));
+      console.log(cart);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      setToggle(!toggle);
+    }
   };
 
   return (
@@ -46,6 +67,7 @@ export default function ShoppingCart() {
           {cart ? (
             cart.map((product, index) => (
               <CartCard
+                user={user}
                 product={product}
                 handleDeleteProduct={handleDeleteProduct}
                 index={index}
@@ -58,6 +80,7 @@ export default function ShoppingCart() {
         <div className="cart-description">
           <div className="cart-info">
             <h3>Total amount: ${cartTotal}</h3>
+            <br />
             <h3>Number of Items: {cartItems}</h3>
           </div>
           <br />

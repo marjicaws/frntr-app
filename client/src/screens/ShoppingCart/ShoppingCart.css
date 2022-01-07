@@ -18,7 +18,8 @@
 }
 
 .cart-info {
-    display:flex
+    display:flex;
+    flex-direction: column;
 }
 .delete-cart  {
     display: flex;
