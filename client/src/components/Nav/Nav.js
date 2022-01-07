@@ -5,14 +5,15 @@ export default function Nav() {
   return (
     <nav>
       <div className="nav-container">
-        <div className="home-link">
+        <div className="home-logo">
           <Link to="/">
             <img
-              className="nav-img"
+              className="nav-img-link"
               src="https://res.cloudinary.com/marssantos/image/upload/v1641500471/Frntr_ifkhwz.png"
             />
           </Link>
         </div>
+        <div className="centered-links">
         <div className="links">
           <Link to="/products">
             <p className="nav-links">Products</p>
@@ -45,6 +46,7 @@ export default function Nav() {
             />
           </Link>
         </div>
+      </div>
       </div>
     </nav>
   );

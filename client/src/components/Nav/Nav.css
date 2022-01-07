@@ -2,9 +2,12 @@
   /* border: 4px solid black; */
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 30vh;
+  position: relative;
+  top: 1px;
   font-size: 25px;
   align-items: center;
+
 }
 .nav-links {
   color: #463f3a;
@@ -28,9 +31,7 @@ a {
 
 }
 
-.home-link {
-  /* border: 2px solid green; */
-}
+
 
 .links {
   /* border: 2px solid blue; */
@@ -53,10 +54,21 @@ a {
   padding: 5px;
 }
 
-.nav-img {
-  width: 20vw;
+.home-logo {
+  /* border: 2px solid green; */
+
+}
+
+.nav-img-link {
+  width: 15vw;
   padding-left: 20px;  
   
  
   
+}
+
+.centered-links {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
 }
