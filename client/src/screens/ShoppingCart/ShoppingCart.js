@@ -3,6 +3,7 @@ import Layout from "../../components/Layout/Layout";
 import CartCard from "../../components/CartCard/CartCard";
 import { getCart, clearCart, removeFromCart } from "../../services/products";
 import "./ShoppingCart.css";
+import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 
 export default function ShoppingCart({ user }) {
   const [cart, setCart] = useState([]);
@@ -74,7 +75,10 @@ export default function ShoppingCart({ user }) {
               />
             ))
           ) : (
-            <h3>Your Cart is Empty</h3>
+            <div>
+              <h3>Your Cart is Empty. Want to add something?</h3>
+              <FeaturedProducts user={user} />
+            </div>
           )}
         </div>
         <div className="cart-description">
@@ -87,7 +91,10 @@ export default function ShoppingCart({ user }) {
           <br />
           <div className="delete-cart">
             {cart.length === 0 ? (
-              <h3>Your Cart Is Empty</h3>
+              <div>
+                <h3>Your Cart is Empty. Want to add something?</h3>
+                <FeaturedProducts user={user} />
+              </div>
             ) : (
               <button onClick={(e) => handleDeleteCart(e)}>Delete Cart</button>
             )}
