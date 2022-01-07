@@ -1,6 +1,6 @@
 .all-cart-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly
     /* border: 5px solid #000000; */
 }
 
